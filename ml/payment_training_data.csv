@@ -1,0 +1,1001 @@
+payment_id,amount,previous_failures,customer_history,failure_reason,payment_method,retry_count,customer_age_days,time_of_day,day_type,recovered
+PAY00522,1645.79,1,1,risk_declined,Card,1,608,5,weekday,0
+PAY00738,6949.85,3,0,network_error,Card,3,295,5,weekday,1
+PAY00741,8200.92,3,0,insufficient_funds,Card,1,768,7,weekend,1
+PAY00661,830.77,0,0,expired_card,UPI,2,927,8,weekday,0
+PAY00412,481.52,3,1,insufficient_funds,UPI,4,430,14,weekday,0
+PAY00679,4866.19,0,0,network_error,Net Banking,1,721,11,weekday,1
+PAY00627,2466.67,2,1,insufficient_funds,Card,0,390,5,weekend,1
+PAY00514,3253.0,1,1,authentication_failed,UPI,1,515,6,weekday,1
+PAY00860,6167.85,2,1,card_declined,Card,0,947,2,weekday,0
+PAY00137,4568.8,2,0,insufficient_funds,UPI,1,586,4,weekday,1
+PAY00812,2141.6,0,0,expired_card,Card,1,498,9,weekend,0
+PAY00077,2434.15,1,0,card_declined,UPI,1,3000,4,weekday,0
+PAY00637,2978.23,1,1,insufficient_funds,UPI,0,1102,19,weekday,1
+PAY00974,5912.42,0,1,network_error,Card,2,356,23,weekend,1
+PAY00939,7783.52,0,0,insufficient_funds,Net Banking,2,582,4,weekend,0
+PAY00900,948.82,1,1,customer_cancelled,UPI,0,1008,16,weekday,0
+PAY00281,5263.97,2,1,network_error,UPI,0,1016,8,weekend,0
+PAY00884,1292.51,0,0,network_error,UPI,0,515,16,weekday,1
+PAY00762,6006.42,1,1,insufficient_funds,UPI,1,686,9,weekday,0
+PAY00320,1285.57,1,0,bank_server_error,Card,0,139,22,weekend,0
+PAY00550,6147.4,3,0,network_error,UPI,2,1263,11,weekday,0
+PAY00175,1181.18,1,1,expired_card,UPI,0,887,0,weekday,0
+PAY00372,10830.64,1,1,transaction_limit,Card,1,851,12,weekday,0
+PAY00528,3913.87,1,0,network_error,Net Banking,0,296,10,weekday,0
+PAY00211,7623.84,1,1,customer_cancelled,UPI,1,1498,5,weekday,1
+PAY00236,2007.2,1,0,authentication_failed,Net Banking,1,627,8,weekday,1
+PAY00102,10560.36,1,1,timeout,Net Banking,1,1055,17,weekday,1
+PAY00987,1060.92,2,1,card_declined,Card,2,756,15,weekday,1
+PAY00903,3087.73,1,1,insufficient_funds,Net Banking,1,973,17,weekday,0
+PAY00948,289.89,0,1,card_declined,UPI,0,459,5,weekday,1
+PAY00347,2117.69,1,1,timeout,Card,1,522,7,weekend,1
+PAY00140,41660.19,2,1,expired_card,Card,1,273,18,weekday,0
+PAY00622,3596.84,0,1,card_declined,Card,3,1126,3,weekend,1
+PAY00500,982.12,0,1,risk_declined,UPI,1,476,11,weekday,0
+PAY00371,3534.16,1,0,insufficient_funds,UPI,2,518,12,weekend,0
+PAY00199,3484.8,2,1,expired_card,Card,0,1390,7,weekend,0
+PAY00688,12508.16,2,1,network_error,Card,1,504,22,weekday,1
+PAY00585,6423.74,2,1,expired_card,UPI,2,353,7,weekday,0
+PAY00902,3818.79,2,1,bank_server_error,Card,1,666,5,weekday,0
+PAY00060,7970.92,0,0,bank_server_error,UPI,1,629,13,weekday,0
+PAY00329,1292.47,1,1,expired_card,UPI,1,615,10,weekend,0
+PAY00097,1137.09,0,1,bank_server_error,UPI,2,514,17,weekday,1
+PAY00313,15411.4,1,1,insufficient_funds,UPI,0,1029,16,weekday,1
+PAY00975,1496.32,0,0,card_declined,UPI,1,694,5,weekday,1
+PAY00300,4625.38,0,1,timeout,UPI,1,623,0,weekday,1
+PAY00278,1359.63,1,1,transaction_limit,Net Banking,1,691,17,weekend,1
+PAY00925,3039.0,2,1,insufficient_funds,UPI,0,818,20,weekend,1
+PAY00602,2142.25,0,1,network_error,UPI,0,524,11,weekday,1
+PAY00440,5035.28,2,1,insufficient_funds,Net Banking,0,1556,10,weekday,0
+PAY00838,11776.73,1,1,card_declined,UPI,0,672,19,weekday,1
+PAY00571,1022.1,1,0,card_declined,UPI,0,403,16,weekday,1
+PAY00880,3417.73,1,1,card_declined,Card,0,1446,9,weekday,1
+PAY00262,2790.81,1,1,card_declined,Wallet,1,270,12,weekday,0
+PAY00579,2823.91,1,1,expired_card,Net Banking,2,251,12,weekday,0
+PAY00024,3069.19,7,1,authentication_failed,Wallet,0,724,8,weekend,0
+PAY00031,21610.16,0,1,network_error,Net Banking,0,753,16,weekend,1
+PAY00618,4298.05,0,1,bank_server_error,UPI,0,984,6,weekday,1
+PAY00011,7390.91,0,0,network_error,UPI,1,537,7,weekend,1
+PAY00222,4301.16,0,1,risk_declined,UPI,1,1584,21,weekend,0
+PAY00821,2324.97,1,1,network_error,UPI,1,195,3,weekday,1
+PAY00297,4501.26,3,1,insufficient_funds,UPI,0,519,8,weekend,1
+PAY00055,2346.55,1,1,insufficient_funds,Net Banking,1,727,12,weekday,1
+PAY00543,4320.1,1,0,customer_cancelled,UPI,2,388,22,weekday,1
+PAY00210,2634.67,1,1,network_error,Card,0,79,16,weekday,1
+PAY00605,2037.33,2,0,network_error,Card,0,1005,17,weekday,1
+PAY00693,7861.74,0,0,network_error,Card,0,1419,4,weekday,1
+PAY00663,1625.32,0,1,timeout,Card,1,601,21,weekday,1
+PAY00867,1118.42,2,0,timeout,Card,1,163,23,weekday,0
+PAY00071,1183.44,0,1,expired_card,Net Banking,3,1255,11,weekday,0
+PAY00544,3005.43,1,0,network_error,UPI,2,747,2,weekend,0
+PAY00108,2623.7,3,1,bank_server_error,UPI,1,1075,8,weekday,0
+PAY00494,5148.13,1,1,authentication_failed,Wallet,3,835,10,weekend,0
+PAY00591,1238.31,1,1,risk_declined,UPI,2,989,8,weekday,0
+PAY00742,9605.44,2,1,bank_server_error,Card,2,477,14,weekday,1
+PAY00293,12225.59,3,1,timeout,Card,2,413,20,weekday,1
+PAY00290,3205.28,2,1,customer_cancelled,UPI,1,986,19,weekday,0
+PAY00653,14446.72,3,0,timeout,UPI,1,835,21,weekend,0
+PAY00040,6084.64,1,1,card_declined,Net Banking,2,1106,22,weekday,0
+PAY00590,13766.14,0,1,card_declined,UPI,0,775,5,weekday,1
+PAY00308,10567.69,2,1,network_error,UPI,2,664,21,weekday,1
+PAY00680,3037.01,0,1,timeout,UPI,3,1049,4,weekday,1
+PAY00067,2602.17,0,1,transaction_limit,Net Banking,1,1234,1,weekday,0
+PAY00276,4858.51,1,1,bank_server_error,Card,0,545,23,weekend,1
+PAY00068,2362.6,1,1,card_declined,UPI,0,879,8,weekend,1
+PAY00319,8116.58,2,1,risk_declined,Card,1,125,15,weekend,0
+PAY00549,6382.66,1,1,insufficient_funds,Card,0,604,12,weekday,0
+PAY00999,3911.47,6,1,insufficient_funds,UPI,1,518,4,weekday,0
+PAY00715,2926.12,1,1,network_error,UPI,3,1176,9,weekday,1
+PAY00754,19969.48,1,1,network_error,UPI,2,798,22,weekend,1
+PAY00328,3306.38,2,1,authentication_failed,Card,2,355,17,weekend,1
+PAY00383,896.59,5,1,insufficient_funds,Net Banking,1,1133,8,weekend,0
+PAY00452,4707.81,1,1,network_error,Card,0,171,3,weekday,1
+PAY00523,10893.65,0,1,bank_server_error,UPI,0,120,5,weekday,1
+PAY00219,3069.25,1,1,insufficient_funds,UPI,0,1237,7,weekday,0
+PAY00788,2945.52,2,0,insufficient_funds,Card,2,623,22,weekday,0
+PAY00437,2223.2,0,0,card_declined,UPI,0,1410,16,weekday,0
+PAY00765,4675.97,0,0,network_error,UPI,1,212,22,weekday,0
+PAY00089,5266.67,0,1,insufficient_funds,UPI,1,433,10,weekday,0
+PAY00064,5760.66,2,1,customer_cancelled,Wallet,2,804,4,weekday,1
+PAY00827,3593.2,0,1,network_error,Card,1,557,23,weekday,1
+PAY00717,926.64,0,1,bank_server_error,Net Banking,0,654,5,weekday,1
+PAY00352,7187.61,1,1,insufficient_funds,UPI,0,681,11,weekend,0
+PAY00937,1315.91,5,1,insufficient_funds,Net Banking,3,629,13,weekday,0
+PAY00257,5064.8,0,1,expired_card,Wallet,0,227,8,weekend,0
+PAY00636,2744.16,2,1,bank_server_error,UPI,0,489,10,weekday,1
+PAY00645,2627.51,2,0,transaction_limit,Card,0,314,19,weekday,0
+PAY00555,3250.25,1,1,risk_declined,Card,2,262,6,weekday,0
+PAY00960,4951.02,1,0,insufficient_funds,UPI,1,136,6,weekday,0
+PAY00169,3063.69,2,1,insufficient_funds,UPI,1,2236,13,weekday,0
+PAY00918,5489.1,1,1,network_error,Card,0,677,15,weekday,1
+PAY00529,4359.06,2,1,customer_cancelled,Card,0,893,1,weekday,0
+PAY00824,579.03,1,1,bank_server_error,UPI,0,789,23,weekday,1
+PAY00986,5989.14,2,1,timeout,UPI,0,680,4,weekday,1
+PAY00817,2486.98,1,1,transaction_limit,Card,0,863,4,weekday,0
+PAY00087,2348.49,2,1,insufficient_funds,Card,1,892,1,weekday,0
+PAY00433,3130.96,2,1,insufficient_funds,UPI,0,1108,14,weekday,0
+PAY00185,5038.99,0,1,card_declined,Card,1,214,12,weekday,0
+PAY00979,1049.64,2,1,expired_card,Net Banking,0,410,22,weekday,0
+PAY00535,924.84,2,0,insufficient_funds,UPI,0,623,7,weekday,0
+PAY00295,2861.77,1,1,card_declined,UPI,1,1338,19,weekday,0
+PAY00893,2473.5,3,1,network_error,Net Banking,1,154,14,weekday,0
+PAY00426,2581.7,1,1,card_declined,UPI,2,52,3,weekday,1
+PAY00714,3464.23,0,0,card_declined,UPI,1,1209,8,weekday,0
+PAY00261,2858.55,0,1,network_error,Card,3,896,3,weekend,0
+PAY00238,3048.03,0,1,customer_cancelled,UPI,1,918,1,weekday,1
+PAY00560,1644.25,2,1,bank_server_error,Card,0,309,18,weekday,0
+PAY00584,1406.99,1,0,authentication_failed,Card,2,1280,4,weekday,1
+PAY00446,997.44,1,1,insufficient_funds,UPI,0,551,21,weekday,1
+PAY00868,2476.54,0,0,authentication_failed,Wallet,0,2365,18,weekend,1
+PAY00801,1706.55,0,0,transaction_limit,Card,0,387,9,weekday,1
+PAY00600,774.18,0,1,expired_card,UPI,0,340,1,weekday,0
+PAY00850,7975.79,1,1,network_error,Card,0,466,17,weekend,1
+PAY00266,8277.75,1,1,risk_declined,Card,0,346,16,weekend,0
+PAY00996,4723.62,1,0,insufficient_funds,UPI,1,497,18,weekday,1
+PAY00530,13233.79,1,0,insufficient_funds,Card,0,439,7,weekday,0
+PAY00056,2033.42,0,0,network_error,UPI,1,301,11,weekday,1
+PAY00121,1466.37,1,1,risk_declined,Card,1,519,14,weekday,0
+PAY00216,8207.98,3,1,authentication_failed,Card,2,417,22,weekday,0
+PAY00026,2594.64,1,1,card_declined,Card,1,554,5,weekday,0
+PAY00073,1601.96,1,0,expired_card,Card,1,253,20,weekday,0
+PAY00045,3864.94,3,1,network_error,UPI,1,836,23,weekday,1
+PAY00248,16678.82,1,1,risk_declined,Card,0,615,23,weekday,1
+PAY00722,9130.12,0,0,transaction_limit,Card,0,626,16,weekend,0
+PAY00282,794.43,1,0,card_declined,UPI,2,1300,8,weekday,0
+PAY00894,3616.68,3,1,insufficient_funds,Card,1,1149,21,weekday,0
+PAY00915,8101.57,1,1,bank_server_error,UPI,2,136,5,weekday,1
+PAY00811,2947.6,0,1,authentication_failed,Card,1,588,20,weekend,1
+PAY00245,21383.57,6,1,insufficient_funds,Wallet,3,567,6,weekday,0
+PAY00823,1303.42,0,1,timeout,UPI,1,565,3,weekday,1
+PAY00322,2976.39,2,1,customer_cancelled,UPI,1,1394,14,weekend,0
+PAY00644,4050.86,3,1,customer_cancelled,UPI,1,574,16,weekday,1
+PAY00159,2289.56,1,1,customer_cancelled,UPI,1,416,4,weekday,0
+PAY00978,2465.21,1,1,timeout,UPI,1,571,5,weekday,1
+PAY00430,4887.43,0,1,timeout,UPI,0,1319,16,weekday,1
+PAY00942,7434.99,0,1,risk_declined,Net Banking,0,619,11,weekday,0
+PAY00463,906.31,4,1,authentication_failed,UPI,1,994,11,weekday,1
+PAY00310,15259.89,2,1,timeout,UPI,1,1222,9,weekday,1
+PAY00698,1542.91,2,1,card_declined,Card,2,129,21,weekend,1
+PAY00061,837.21,4,1,transaction_limit,Card,1,1167,0,weekday,1
+PAY00885,1381.87,0,1,network_error,Card,1,474,11,weekend,1
+PAY00596,2441.71,1,1,authentication_failed,UPI,0,772,20,weekday,1
+PAY00768,2181.47,0,0,customer_cancelled,Card,1,1095,20,weekday,0
+PAY00650,2511.47,1,1,insufficient_funds,UPI,1,588,8,weekday,0
+PAY00651,16834.23,1,1,card_declined,Card,0,883,16,weekday,1
+PAY00866,7093.22,1,1,network_error,UPI,1,1076,22,weekday,1
+PAY00669,2244.43,1,1,card_declined,Card,1,1079,0,weekday,0
+PAY00299,786.27,1,1,bank_server_error,UPI,1,696,12,weekday,1
+PAY00690,2439.29,0,1,network_error,UPI,0,404,21,weekend,0
+PAY00315,7074.9,0,1,timeout,UPI,1,250,14,weekday,0
+PAY00311,9521.6,2,0,timeout,UPI,0,468,1,weekday,0
+PAY00362,4848.4,1,1,timeout,Card,1,845,11,weekday,1
+PAY00480,31841.98,1,1,network_error,UPI,2,885,23,weekday,1
+PAY00111,5063.32,3,0,risk_declined,Card,0,788,21,weekend,0
+PAY00990,2321.91,0,0,authentication_failed,UPI,2,1557,4,weekday,0
+PAY00487,1804.35,1,1,transaction_limit,Net Banking,1,657,8,weekday,0
+PAY00364,1423.34,2,1,network_error,UPI,1,656,15,weekend,1
+PAY00255,2841.34,1,1,network_error,UPI,0,879,22,weekday,1
+PAY00260,1087.74,0,1,authentication_failed,UPI,1,492,14,weekday,1
+PAY00803,4691.15,3,1,transaction_limit,UPI,1,171,9,weekend,1
+PAY00678,5002.43,1,1,card_declined,Net Banking,0,173,22,weekday,1
+PAY00495,2692.29,1,0,network_error,UPI,4,706,13,weekday,1
+PAY00671,6820.14,0,1,timeout,Card,0,526,9,weekend,1
+PAY00378,637.48,0,1,expired_card,Card,2,462,1,weekday,0
+PAY00527,12055.87,4,1,risk_declined,UPI,2,381,22,weekday,0
+PAY00846,4775.11,1,1,transaction_limit,Card,1,587,1,weekday,0
+PAY00138,7136.13,0,1,bank_server_error,Card,4,825,7,weekday,0
+PAY00356,4266.14,0,1,network_error,UPI,1,540,17,weekday,1
+PAY00366,12329.57,0,1,card_declined,UPI,1,553,16,weekday,0
+PAY00943,5311.71,1,1,expired_card,UPI,0,542,12,weekday,0
+PAY00750,1638.21,1,1,card_declined,Net Banking,2,456,22,weekday,1
+PAY00949,4846.3,1,0,network_error,UPI,1,811,12,weekend,0
+PAY00830,360.9,1,1,risk_declined,Net Banking,1,855,1,weekday,0
+PAY00657,1672.09,1,1,expired_card,Card,1,2683,20,weekday,1
+PAY00200,3046.02,1,1,bank_server_error,Net Banking,0,556,3,weekday,1
+PAY00214,2319.19,3,1,card_declined,UPI,2,420,10,weekday,1
+PAY00409,643.18,1,1,timeout,UPI,0,99,10,weekday,0
+PAY00333,1932.22,0,1,network_error,UPI,1,743,18,weekday,1
+PAY00209,1659.2,1,0,card_declined,Card,0,238,15,weekend,1
+PAY00614,5114.79,1,1,expired_card,Card,1,1177,19,weekday,0
+PAY00079,5956.69,2,1,network_error,UPI,1,386,6,weekday,1
+PAY00030,5047.84,2,1,timeout,UPI,1,1667,22,weekday,1
+PAY00536,6017.15,1,1,authentication_failed,Card,1,1124,14,weekend,1
+PAY00696,1799.86,1,1,network_error,UPI,0,339,11,weekday,1
+PAY00558,1455.49,1,0,card_declined,UPI,1,750,8,weekend,0
+PAY00837,2652.33,1,1,customer_cancelled,UPI,1,1599,9,weekday,0
+PAY00597,2248.5,1,0,insufficient_funds,UPI,0,746,6,weekend,0
+PAY00166,1624.62,2,1,network_error,Card,1,1210,9,weekday,0
+PAY00919,11152.65,0,0,bank_server_error,UPI,0,839,10,weekday,1
+PAY00496,7752.21,0,1,network_error,UPI,0,871,6,weekday,1
+PAY00825,719.06,2,1,card_declined,Net Banking,3,367,15,weekday,0
+PAY00066,6869.62,0,1,authentication_failed,Card,0,276,6,weekend,1
+PAY00142,1509.31,2,1,insufficient_funds,Card,1,241,1,weekend,0
+PAY00926,17332.99,1,1,expired_card,UPI,1,892,13,weekday,1
+PAY00828,3167.03,1,0,customer_cancelled,Card,0,441,13,weekday,1
+PAY00656,4591.71,3,1,insufficient_funds,UPI,1,531,14,weekend,0
+PAY00332,6017.47,0,0,bank_server_error,UPI,2,641,23,weekday,0
+PAY00665,3265.5,0,0,bank_server_error,UPI,0,565,8,weekday,1
+PAY00250,1292.96,2,1,timeout,UPI,0,704,5,weekday,1
+PAY00908,1182.11,0,1,card_declined,UPI,0,1433,14,weekday,1
+PAY00709,2899.27,1,1,insufficient_funds,Card,2,243,3,weekday,0
+PAY00306,1430.18,0,1,card_declined,Net Banking,1,429,8,weekday,1
+PAY00735,4433.48,1,0,insufficient_funds,UPI,3,190,22,weekday,0
+PAY00976,1443.99,1,1,authentication_failed,UPI,1,614,18,weekday,0
+PAY00050,3706.93,3,0,insufficient_funds,UPI,0,174,15,weekend,0
+PAY00897,1970.23,1,1,authentication_failed,Card,1,601,23,weekday,0
+PAY00003,6623.65,0,0,network_error,UPI,1,555,12,weekday,1
+PAY00545,2821.85,1,1,card_declined,Card,2,1733,5,weekday,0
+PAY00351,4786.82,2,1,bank_server_error,Card,1,668,8,weekday,0
+PAY00905,2062.43,2,1,card_declined,Card,1,761,7,weekday,1
+PAY00537,2214.01,2,1,risk_declined,UPI,0,778,22,weekday,0
+PAY00345,13825.87,1,1,network_error,Card,1,273,15,weekday,1
+PAY00995,3188.3,2,1,card_declined,UPI,0,189,1,weekday,1
+PAY00482,11834.22,1,1,authentication_failed,Net Banking,1,1171,11,weekend,0
+PAY00576,1016.3,3,1,card_declined,Net Banking,0,456,16,weekend,1
+PAY00034,1752.52,1,1,network_error,Card,1,439,7,weekday,1
+PAY00032,2477.65,1,1,card_declined,Card,1,714,2,weekday,1
+PAY00232,2118.4,2,0,risk_declined,UPI,1,909,18,weekday,0
+PAY00964,3188.32,1,1,customer_cancelled,Card,0,251,18,weekend,0
+PAY00193,2527.05,2,1,network_error,Card,0,140,20,weekday,1
+PAY00334,1478.61,0,1,customer_cancelled,UPI,0,408,0,weekend,0
+PAY00004,7785.34,0,1,card_declined,Card,1,897,17,weekday,1
+PAY00205,612.7,0,0,authentication_failed,UPI,1,995,10,weekday,1
+PAY00515,6854.79,4,1,network_error,Card,0,557,4,weekday,0
+PAY00800,3617.7,1,1,insufficient_funds,Card,1,388,16,weekday,1
+PAY00307,2633.93,5,1,bank_server_error,UPI,1,621,4,weekday,0
+PAY00110,806.17,1,1,network_error,Net Banking,0,156,12,weekend,1
+PAY00431,1445.28,0,0,expired_card,Card,1,721,20,weekend,0
+PAY00078,4004.91,2,0,timeout,Net Banking,0,623,16,weekday,0
+PAY00085,1266.55,0,1,card_declined,UPI,0,1037,6,weekday,1
+PAY00287,4379.45,0,1,bank_server_error,UPI,2,573,4,weekend,1
+PAY00083,2570.67,2,1,insufficient_funds,Card,2,1210,12,weekend,0
+PAY00992,12306.73,0,0,card_declined,Card,0,958,19,weekend,0
+PAY00790,3078.27,3,0,insufficient_funds,UPI,1,463,13,weekend,0
+PAY00895,2685.26,0,1,timeout,UPI,3,1889,12,weekend,1
+PAY00399,5492.14,1,0,insufficient_funds,UPI,0,860,21,weekend,0
+PAY00324,6626.0,0,0,bank_server_error,Card,1,298,22,weekend,1
+PAY00520,13976.25,1,1,insufficient_funds,Card,0,561,23,weekday,0
+PAY00917,11865.32,2,1,bank_server_error,Card,2,794,1,weekend,0
+PAY00923,3873.29,1,1,network_error,Wallet,2,646,1,weekend,1
+PAY00006,1157.09,0,1,customer_cancelled,UPI,0,829,6,weekend,1
+PAY00732,3677.73,0,1,insufficient_funds,Card,3,854,11,weekday,1
+PAY00466,2370.0,2,1,bank_server_error,UPI,0,263,15,weekday,1
+PAY00098,1499.46,1,1,network_error,UPI,0,304,17,weekday,1
+PAY00267,3994.34,1,1,timeout,UPI,0,592,4,weekday,1
+PAY00358,4404.18,3,1,risk_declined,UPI,0,551,11,weekday,0
+PAY00869,2128.93,1,1,card_declined,UPI,2,409,14,weekday,1
+PAY00799,8370.59,0,0,card_declined,UPI,1,744,13,weekday,1
+PAY00381,3836.12,2,1,bank_server_error,Net Banking,0,929,21,weekday,1
+PAY00632,30559.99,2,1,card_declined,UPI,1,1395,10,weekend,0
+PAY00382,10653.42,2,1,card_declined,Card,1,1113,19,weekday,0
+PAY00491,8804.45,2,0,risk_declined,UPI,1,531,15,weekday,0
+PAY00119,13657.31,3,1,network_error,Card,3,778,16,weekday,0
+PAY00901,4874.42,3,1,network_error,UPI,1,1091,16,weekday,1
+PAY00251,2559.34,0,1,insufficient_funds,Card,1,899,4,weekday,1
+PAY00524,2974.63,1,1,bank_server_error,UPI,1,768,21,weekday,1
+PAY00010,1694.99,0,1,card_declined,Card,0,455,20,weekday,0
+PAY00197,6047.17,0,1,network_error,UPI,0,955,10,weekend,1
+PAY00604,2053.02,1,1,card_declined,Card,3,141,10,weekday,1
+PAY00082,1993.97,0,0,bank_server_error,Wallet,1,531,16,weekday,1
+PAY00784,7484.58,1,1,network_error,UPI,1,524,19,weekday,1
+PAY00588,1717.58,0,1,authentication_failed,UPI,1,651,6,weekday,1
+PAY00798,8611.54,0,1,network_error,UPI,0,849,19,weekday,1
+PAY00240,2231.65,0,1,authentication_failed,UPI,1,855,15,weekend,0
+PAY00291,2825.21,0,1,bank_server_error,Card,0,123,18,weekday,1
+PAY00212,1133.52,3,0,network_error,UPI,0,620,20,weekend,0
+PAY00718,6269.21,1,0,insufficient_funds,UPI,0,741,3,weekday,0
+PAY00360,3087.51,1,1,insufficient_funds,Card,0,253,16,weekend,1
+PAY00450,4848.33,1,0,risk_declined,Net Banking,3,545,22,weekday,0
+PAY00228,17254.64,1,0,expired_card,Card,3,358,3,weekday,0
+PAY00951,808.82,1,0,network_error,Card,0,802,7,weekday,1
+PAY00947,4656.33,1,1,bank_server_error,UPI,1,213,0,weekday,1
+PAY00797,8158.9,0,0,network_error,UPI,0,1375,15,weekday,1
+PAY00502,7490.76,0,1,network_error,UPI,2,1218,2,weekday,0
+PAY00465,1353.9,0,1,transaction_limit,UPI,0,768,23,weekday,1
+PAY00363,8187.54,2,1,transaction_limit,Card,2,464,7,weekday,1
+PAY00469,8960.78,0,1,risk_declined,UPI,0,421,18,weekday,0
+PAY00936,5776.96,2,0,network_error,UPI,1,195,23,weekday,0
+PAY00429,1081.02,2,0,insufficient_funds,UPI,0,469,12,weekend,0
+PAY00008,2675.02,2,0,card_declined,Card,0,208,15,weekend,1
+PAY00156,15728.96,0,1,network_error,Card,2,308,7,weekday,1
+PAY00542,1734.06,2,1,customer_cancelled,Net Banking,2,452,20,weekday,0
+PAY00441,2979.95,1,1,network_error,UPI,1,799,4,weekday,1
+PAY00483,3783.14,1,1,risk_declined,Card,0,1188,16,weekday,0
+PAY00423,2111.76,5,0,bank_server_error,UPI,1,262,20,weekday,1
+PAY00779,3684.34,1,0,bank_server_error,UPI,1,872,6,weekend,1
+PAY00950,157.49,4,1,card_declined,UPI,3,500,17,weekday,1
+PAY00335,3598.9,0,1,card_declined,UPI,0,1110,23,weekday,0
+PAY00577,10897.37,0,0,transaction_limit,Card,1,402,17,weekday,1
+PAY00935,4553.7,1,1,network_error,Card,0,171,14,weekday,1
+PAY00568,2009.3,1,1,timeout,UPI,2,168,15,weekday,0
+PAY00595,1178.04,1,0,insufficient_funds,UPI,1,125,16,weekday,1
+PAY00531,2573.48,2,1,insufficient_funds,UPI,1,589,13,weekday,0
+PAY00582,1309.79,1,1,authentication_failed,UPI,0,496,9,weekday,1
+PAY00708,5626.74,3,1,timeout,UPI,0,443,12,weekday,1
+PAY00449,9026.52,1,0,timeout,Net Banking,0,868,13,weekend,0
+PAY00454,20454.37,0,0,card_declined,Card,0,796,12,weekend,0
+PAY00229,1694.7,0,1,network_error,Card,1,261,4,weekday,1
+PAY00353,2154.29,3,1,network_error,Card,1,963,6,weekday,1
+PAY00729,1327.94,2,0,insufficient_funds,UPI,1,304,12,weekday,1
+PAY00213,3592.33,0,1,bank_server_error,Card,1,485,18,weekday,1
+PAY00080,2690.75,0,1,authentication_failed,Net Banking,1,414,13,weekday,1
+PAY00149,8661.14,1,1,risk_declined,Card,1,529,0,weekday,0
+PAY00303,7293.74,1,0,insufficient_funds,UPI,2,950,9,weekday,0
+PAY00629,1445.22,2,1,network_error,Net Banking,0,125,23,weekend,1
+PAY00778,4904.76,0,1,insufficient_funds,UPI,1,626,15,weekday,0
+PAY00507,27388.29,0,1,insufficient_funds,Net Banking,1,464,21,weekday,1
+PAY00343,3721.0,0,1,card_declined,UPI,1,1044,0,weekday,1
+PAY00486,3028.04,2,0,card_declined,Card,1,814,0,weekend,0
+PAY00712,6354.59,0,1,transaction_limit,Net Banking,0,379,1,weekday,0
+PAY00134,2897.57,3,1,bank_server_error,UPI,1,1176,5,weekend,0
+PAY00704,3334.6,0,1,customer_cancelled,UPI,1,589,15,weekday,1
+PAY00312,5083.43,1,1,network_error,Card,0,541,20,weekend,1
+PAY00723,503.65,1,1,network_error,UPI,1,884,5,weekday,1
+PAY00630,450.18,0,1,transaction_limit,UPI,2,590,6,weekday,1
+PAY00001,4534.76,1,0,risk_declined,UPI,0,413,9,weekday,0
+PAY00317,3703.68,0,1,insufficient_funds,Net Banking,3,303,11,weekday,1
+PAY00707,1614.09,3,1,bank_server_error,Net Banking,2,640,16,weekday,0
+PAY00548,1485.14,1,1,network_error,Net Banking,2,740,6,weekday,1
+PAY00873,6477.94,3,1,transaction_limit,Card,1,1101,4,weekday,0
+PAY00533,2390.45,1,1,card_declined,Card,0,1269,0,weekend,1
+PAY00478,1325.93,1,0,card_declined,Wallet,1,410,7,weekend,0
+PAY00405,5450.76,2,1,expired_card,UPI,0,589,22,weekday,1
+PAY00173,2377.45,0,1,authentication_failed,UPI,1,743,2,weekend,1
+PAY00126,4740.31,1,0,timeout,UPI,1,857,8,weekday,1
+PAY00395,6356.15,0,0,network_error,Net Banking,1,737,1,weekend,0
+PAY00421,3785.09,1,1,authentication_failed,UPI,0,196,2,weekday,1
+PAY00553,4502.88,0,0,network_error,Net Banking,0,297,7,weekday,0
+PAY00904,13501.46,1,1,network_error,UPI,0,342,1,weekday,1
+PAY00091,6161.62,2,1,timeout,Card,1,901,6,weekday,1
+PAY00940,7307.03,0,0,authentication_failed,Net Banking,2,279,7,weekday,1
+PAY00182,4217.48,0,1,card_declined,Card,2,420,11,weekday,1
+PAY00275,13331.3,1,1,network_error,Card,0,617,12,weekday,0
+PAY00896,8539.49,0,1,transaction_limit,UPI,1,618,13,weekend,0
+PAY00070,2974.73,0,1,insufficient_funds,UPI,0,326,0,weekday,0
+PAY00292,3984.62,2,1,network_error,Net Banking,1,621,12,weekend,1
+PAY00132,1086.09,0,1,authentication_failed,Card,0,729,0,weekday,1
+PAY00301,15195.67,0,1,card_declined,UPI,2,711,17,weekday,1
+PAY00425,1645.18,1,1,timeout,UPI,0,758,17,weekend,1
+PAY00327,919.92,1,0,bank_server_error,Card,3,878,6,weekend,1
+PAY00145,1753.76,2,0,expired_card,UPI,2,818,19,weekend,0
+PAY00424,994.32,3,0,card_declined,UPI,1,637,14,weekday,0
+PAY00581,451.28,3,0,authentication_failed,Card,0,410,2,weekday,0
+PAY00136,1476.27,1,0,transaction_limit,Card,0,315,8,weekday,0
+PAY00451,3130.82,0,1,authentication_failed,UPI,2,1265,22,weekday,1
+PAY00165,7138.33,1,0,customer_cancelled,UPI,0,599,10,weekend,1
+PAY00029,4970.82,0,0,insufficient_funds,UPI,1,400,2,weekday,0
+PAY00774,11031.94,2,0,card_declined,Net Banking,0,798,19,weekday,0
+PAY00194,12121.62,1,0,insufficient_funds,Card,0,406,14,weekend,0
+PAY00389,4426.44,0,1,insufficient_funds,Wallet,0,223,15,weekday,1
+PAY00853,7576.67,1,1,transaction_limit,UPI,0,267,7,weekend,1
+PAY00170,3380.81,1,0,timeout,Card,1,1093,20,weekend,1
+PAY00706,1526.84,2,1,card_declined,UPI,0,748,2,weekday,1
+PAY00141,4977.91,3,1,expired_card,Net Banking,2,941,23,weekend,0
+PAY00174,1234.91,0,1,timeout,Card,0,462,1,weekday,1
+PAY00007,3901.76,1,1,risk_declined,UPI,1,450,14,weekend,1
+PAY00746,7721.24,0,1,card_declined,UPI,2,232,13,weekday,1
+PAY00479,3518.91,1,0,network_error,UPI,0,402,14,weekday,0
+PAY00074,5340.66,3,1,customer_cancelled,UPI,1,563,0,weekday,0
+PAY00911,1847.38,2,1,network_error,Card,1,29,23,weekend,1
+PAY00814,2280.51,0,0,customer_cancelled,Net Banking,1,502,12,weekend,0
+PAY00239,1418.66,1,1,bank_server_error,UPI,1,350,10,weekend,0
+PAY00146,2458.89,1,0,insufficient_funds,Card,2,376,0,weekday,0
+PAY00793,5404.88,2,0,authentication_failed,Card,0,423,14,weekend,0
+PAY00235,1883.33,0,0,authentication_failed,UPI,0,653,20,weekend,1
+PAY00221,2893.55,3,1,authentication_failed,UPI,0,433,7,weekday,0
+PAY00924,2153.36,3,1,bank_server_error,UPI,0,660,21,weekday,1
+PAY00501,11156.76,0,1,authentication_failed,UPI,1,1052,11,weekday,1
+PAY00133,6005.29,2,1,bank_server_error,Card,0,784,5,weekday,1
+PAY00991,7335.57,2,1,network_error,UPI,0,309,16,weekday,1
+PAY00775,3536.04,2,1,card_declined,UPI,0,305,17,weekend,1
+PAY00186,12911.98,0,1,customer_cancelled,Card,4,211,18,weekend,1
+PAY00042,5553.59,1,1,network_error,UPI,0,350,2,weekend,1
+PAY00697,486.98,1,1,authentication_failed,Net Banking,0,433,7,weekday,1
+PAY00109,7149.37,1,0,card_declined,Card,1,291,11,weekend,1
+PAY00589,4275.47,3,1,insufficient_funds,UPI,2,804,19,weekday,0
+PAY00057,2770.12,0,1,transaction_limit,Card,1,1025,15,weekday,0
+PAY00406,2792.12,1,1,bank_server_error,Card,0,232,12,weekday,0
+PAY00443,4760.71,2,1,timeout,UPI,1,241,10,weekday,1
+PAY00758,7239.34,2,1,expired_card,UPI,1,1160,18,weekend,1
+PAY00998,3879.72,0,1,network_error,UPI,1,570,22,weekend,1
+PAY00025,2431.93,1,0,risk_declined,UPI,3,560,8,weekend,0
+PAY00468,18163.42,2,1,card_declined,Card,1,969,6,weekday,1
+PAY00540,1793.52,1,0,timeout,UPI,2,463,0,weekday,1
+PAY00532,1572.72,2,1,risk_declined,UPI,1,172,9,weekday,0
+PAY00619,2076.91,1,1,network_error,UPI,0,538,21,weekday,1
+PAY00695,1733.36,1,1,network_error,UPI,0,644,17,weekday,0
+PAY00927,3029.81,1,1,timeout,UPI,1,150,21,weekday,0
+PAY00339,9344.41,2,1,bank_server_error,UPI,0,424,23,weekend,1
+PAY00052,5985.61,3,1,card_declined,Wallet,2,1396,18,weekday,0
+PAY00508,5065.31,4,1,network_error,Card,0,1105,14,weekend,0
+PAY00517,6177.05,1,1,transaction_limit,Card,2,474,18,weekday,0
+PAY00921,2671.24,3,1,network_error,UPI,0,514,16,weekday,0
+PAY00782,3270.66,1,1,customer_cancelled,Net Banking,1,1517,4,weekday,0
+PAY00265,5225.61,0,1,network_error,UPI,1,882,5,weekday,1
+PAY00818,4307.04,1,1,authentication_failed,Card,0,1332,10,weekday,0
+PAY00711,3459.64,0,1,authentication_failed,Card,3,405,22,weekday,1
+PAY00683,10142.45,1,0,network_error,Wallet,2,563,8,weekday,0
+PAY00833,1341.98,3,1,card_declined,Card,0,1016,11,weekend,0
+PAY00519,7507.53,1,1,transaction_limit,UPI,0,710,12,weekday,1
+PAY00448,2640.58,0,1,bank_server_error,UPI,0,875,19,weekday,0
+PAY00019,7384.96,2,1,card_declined,Net Banking,1,1356,17,weekend,1
+PAY00716,1245.15,3,1,expired_card,UPI,1,521,17,weekday,0
+PAY00484,5734.06,2,0,card_declined,UPI,1,328,2,weekday,1
+PAY00569,5578.54,2,1,network_error,UPI,2,934,22,weekend,0
+PAY00434,738.22,0,0,card_declined,UPI,0,469,13,weekday,1
+PAY00368,1739.94,2,1,bank_server_error,Net Banking,2,599,17,weekday,1
+PAY00084,2530.17,1,1,bank_server_error,UPI,0,159,0,weekend,1
+PAY00062,2632.97,1,1,risk_declined,Card,2,1235,12,weekday,1
+PAY00639,5728.13,1,1,transaction_limit,UPI,0,379,18,weekday,0
+PAY00273,3222.22,0,1,customer_cancelled,Wallet,1,509,14,weekday,0
+PAY00286,2344.25,0,1,timeout,Wallet,0,487,23,weekday,1
+PAY00361,3074.43,2,1,network_error,UPI,0,267,18,weekday,1
+PAY00355,8679.5,0,1,bank_server_error,UPI,0,784,20,weekday,1
+PAY00457,8737.0,2,1,network_error,UPI,2,1078,0,weekday,1
+PAY00279,9633.38,4,1,risk_declined,UPI,1,767,1,weekend,0
+PAY00013,3702.06,2,1,network_error,Card,1,1675,20,weekday,1
+PAY00183,2468.16,3,0,risk_declined,Card,1,1083,5,weekday,0
+PAY00369,4156.71,0,1,network_error,UPI,3,616,10,weekday,1
+PAY00882,7832.37,1,0,bank_server_error,Net Banking,1,575,7,weekend,1
+PAY00616,1176.48,1,1,expired_card,Card,2,771,15,weekday,1
+PAY00224,1392.41,0,1,bank_server_error,UPI,1,347,21,weekday,0
+PAY00573,4373.19,0,1,network_error,Card,0,426,3,weekday,1
+PAY00971,2752.16,1,1,bank_server_error,UPI,2,510,8,weekday,1
+PAY00654,1369.69,1,1,insufficient_funds,Card,2,912,4,weekend,0
+PAY00546,3057.07,1,1,expired_card,UPI,2,1105,1,weekday,0
+PAY00583,2726.59,1,1,card_declined,Card,0,440,22,weekday,1
+PAY00634,674.66,1,1,card_declined,Net Banking,0,304,22,weekday,1
+PAY00177,13396.46,2,1,timeout,UPI,1,382,20,weekday,1
+PAY00666,821.16,0,0,network_error,Card,1,572,0,weekday,0
+PAY00674,1142.77,2,1,bank_server_error,UPI,2,645,3,weekend,1
+PAY00586,19114.84,1,0,network_error,UPI,1,336,11,weekend,1
+PAY00874,3692.54,1,1,timeout,UPI,4,162,21,weekday,1
+PAY00394,5171.9,0,1,card_declined,Card,0,196,2,weekday,1
+PAY00164,1741.22,1,1,network_error,UPI,1,570,9,weekend,1
+PAY00249,41349.9,1,1,card_declined,UPI,0,368,19,weekday,1
+PAY00635,2688.15,2,1,bank_server_error,UPI,0,1502,15,weekday,0
+PAY00886,4474.27,0,1,insufficient_funds,UPI,0,944,23,weekday,1
+PAY00670,395.63,2,0,insufficient_funds,UPI,0,303,13,weekday,0
+PAY00376,25311.73,1,1,bank_server_error,Net Banking,1,1846,16,weekday,1
+PAY00413,1966.47,0,1,network_error,Card,2,1140,19,weekend,1
+PAY00075,3950.43,0,0,bank_server_error,UPI,2,836,0,weekday,0
+PAY00114,1023.89,1,0,network_error,Net Banking,1,1775,8,weekday,1
+PAY00599,4298.1,2,0,expired_card,Card,2,999,21,weekday,0
+PAY00962,3912.34,1,1,bank_server_error,UPI,1,629,16,weekday,1
+PAY00391,491.24,2,1,card_declined,UPI,1,358,19,weekend,1
+PAY00105,1582.79,0,1,timeout,Card,2,503,10,weekday,1
+PAY00115,3721.3,1,1,insufficient_funds,Card,0,575,17,weekend,1
+PAY00418,10818.92,1,1,network_error,UPI,1,635,18,weekday,1
+PAY00526,2402.73,2,1,insufficient_funds,UPI,1,728,22,weekday,1
+PAY00458,1705.66,1,0,timeout,Card,0,75,5,weekend,0
+PAY00410,1162.72,0,1,card_declined,UPI,2,585,16,weekend,1
+PAY00093,2442.35,0,0,network_error,Card,1,344,14,weekend,1
+PAY00931,3517.95,0,1,timeout,UPI,4,224,13,weekday,1
+PAY00090,5115.7,2,1,customer_cancelled,UPI,0,271,19,weekday,0
+PAY00337,1978.41,0,0,insufficient_funds,Card,0,471,1,weekday,1
+PAY00989,2706.17,0,1,card_declined,Wallet,0,423,19,weekend,1
+PAY00922,1674.99,0,1,card_declined,Net Banking,2,382,23,weekday,1
+PAY00934,14197.24,2,1,timeout,Card,0,970,18,weekday,0
+PAY00606,5544.05,0,1,insufficient_funds,Card,0,729,4,weekday,0
+PAY00594,859.65,0,0,card_declined,UPI,1,338,18,weekday,1
+PAY00612,4274.84,1,1,bank_server_error,Card,0,661,1,weekend,1
+PAY00095,834.04,1,1,insufficient_funds,Card,2,1200,19,weekday,0
+PAY00012,6779.38,0,1,bank_server_error,Wallet,1,864,14,weekend,1
+PAY00397,6678.38,1,0,risk_declined,Card,1,1194,7,weekend,0
+PAY00534,5141.0,1,0,expired_card,UPI,0,624,23,weekday,0
+PAY00044,4263.54,2,1,card_declined,UPI,2,426,16,weekday,0
+PAY00043,1987.9,1,1,authentication_failed,Card,0,201,10,weekday,1
+PAY00330,2252.92,3,0,bank_server_error,Card,0,537,18,weekday,0
+PAY00168,4854.82,1,1,insufficient_funds,Card,2,776,21,weekend,0
+PAY00498,2631.35,0,0,card_declined,UPI,3,371,14,weekend,0
+PAY00877,3463.54,1,1,network_error,UPI,1,1046,12,weekday,1
+PAY00598,6982.97,1,0,card_declined,Card,0,574,9,weekday,1
+PAY00757,1600.06,1,0,bank_server_error,UPI,3,489,3,weekend,1
+PAY00101,2537.87,1,0,bank_server_error,UPI,2,1313,20,weekend,1
+PAY00427,6929.66,2,1,network_error,UPI,0,753,22,weekday,1
+PAY00179,3164.26,1,1,authentication_failed,Net Banking,0,448,18,weekend,1
+PAY00445,2615.34,0,0,card_declined,Card,0,750,14,weekend,1
+PAY00417,8833.91,0,1,insufficient_funds,Net Banking,1,690,10,weekday,1
+PAY00871,4436.2,1,1,bank_server_error,UPI,0,1229,19,weekday,0
+PAY00883,1361.14,2,0,expired_card,UPI,0,685,4,weekend,0
+PAY00681,7007.79,1,1,network_error,Card,1,818,16,weekday,0
+PAY00178,4009.86,3,0,timeout,Net Banking,1,520,7,weekend,1
+PAY00396,3936.41,1,1,risk_declined,Wallet,0,1001,5,weekday,0
+PAY00912,4904.93,1,1,transaction_limit,UPI,1,1078,7,weekday,0
+PAY00794,4880.94,2,1,card_declined,UPI,0,221,10,weekend,1
+PAY00961,13833.68,0,1,card_declined,Card,4,791,20,weekend,1
+PAY00685,2417.34,1,1,insufficient_funds,UPI,0,533,6,weekend,0
+PAY00384,1207.88,1,1,card_declined,UPI,0,215,10,weekday,1
+PAY00957,2319.47,0,1,insufficient_funds,UPI,1,470,14,weekday,0
+PAY00752,2713.9,2,0,insufficient_funds,UPI,0,207,5,weekday,1
+PAY00258,2542.2,0,1,network_error,UPI,0,1058,20,weekday,1
+PAY00539,457.33,3,1,network_error,UPI,0,1341,16,weekday,1
+PAY00336,1244.44,1,1,insufficient_funds,Wallet,0,1503,22,weekend,0
+PAY00016,1686.01,1,1,network_error,UPI,0,338,1,weekday,1
+PAY00325,16449.78,4,0,transaction_limit,UPI,0,546,0,weekend,0
+PAY00759,6028.18,3,0,timeout,UPI,3,862,13,weekday,1
+PAY00223,4066.78,1,1,insufficient_funds,UPI,0,552,4,weekday,0
+PAY00180,4462.53,1,1,network_error,UPI,2,832,10,weekday,1
+PAY00984,6540.47,3,0,authentication_failed,Card,1,245,0,weekend,0
+PAY00023,9893.95,0,1,timeout,UPI,1,589,23,weekend,0
+PAY00357,4271.67,2,0,timeout,Card,1,437,5,weekend,1
+PAY00667,886.44,1,0,network_error,Card,2,519,12,weekday,1
+PAY00862,1027.17,3,1,bank_server_error,UPI,0,635,8,weekday,1
+PAY00341,499.16,1,1,insufficient_funds,UPI,1,540,11,weekday,1
+PAY00432,5239.65,3,1,network_error,UPI,3,1235,22,weekday,1
+PAY00552,5617.1,1,1,timeout,UPI,1,207,21,weekend,1
+PAY00834,2534.33,2,1,card_declined,UPI,1,527,14,weekday,0
+PAY00204,6050.32,1,1,timeout,UPI,0,400,11,weekend,1
+PAY00631,13764.04,0,0,card_declined,UPI,1,486,16,weekday,1
+PAY00094,3270.69,1,1,insufficient_funds,UPI,0,191,15,weekend,0
+PAY00559,1215.26,1,1,card_declined,UPI,2,233,13,weekend,0
+PAY00069,7257.55,0,1,expired_card,UPI,4,660,18,weekend,0
+PAY00623,4398.83,0,1,authentication_failed,Net Banking,0,1028,6,weekend,1
+PAY00285,1361.92,3,0,insufficient_funds,Net Banking,0,267,9,weekday,0
+PAY00845,3912.44,0,1,card_declined,UPI,1,1424,1,weekday,1
+PAY00435,7704.58,2,0,authentication_failed,UPI,0,931,10,weekday,0
+PAY00154,2314.98,1,1,insufficient_funds,UPI,1,643,21,weekday,0
+PAY00076,6294.5,0,0,customer_cancelled,Card,0,453,13,weekday,0
+PAY00731,5121.28,0,1,card_declined,Card,3,965,5,weekday,1
+PAY00447,8670.29,0,0,bank_server_error,UPI,0,265,16,weekday,1
+PAY00189,1093.99,0,1,card_declined,UPI,0,986,17,weekday,1
+PAY00272,4580.39,2,1,insufficient_funds,Net Banking,2,235,11,weekend,0
+PAY00237,564.15,1,1,expired_card,Net Banking,0,1028,19,weekday,1
+PAY00488,5045.61,0,1,expired_card,UPI,0,122,17,weekend,1
+PAY00118,3565.62,1,1,network_error,UPI,2,477,18,weekend,1
+PAY00944,9708.71,5,0,authentication_failed,Card,2,458,19,weekday,1
+PAY00513,3808.82,2,1,network_error,UPI,0,524,15,weekday,1
+PAY00826,3587.68,0,1,network_error,UPI,0,576,3,weekday,1
+PAY00592,4325.14,0,1,insufficient_funds,Net Banking,1,228,13,weekday,1
+PAY00127,12140.78,0,0,timeout,UPI,1,830,17,weekday,0
+PAY00117,4265.41,2,1,network_error,UPI,1,372,21,weekday,1
+PAY00474,4097.14,1,1,transaction_limit,Net Banking,2,344,3,weekday,0
+PAY00694,516.21,1,0,authentication_failed,Card,0,724,0,weekend,0
+PAY00058,12471.71,2,1,bank_server_error,Card,0,964,16,weekend,1
+PAY00864,3758.98,0,1,risk_declined,UPI,0,689,22,weekend,1
+PAY00913,5612.56,1,1,network_error,Card,1,248,18,weekday,1
+PAY00370,7174.19,1,1,customer_cancelled,Net Banking,1,1091,19,weekend,1
+PAY00269,3661.76,2,1,network_error,Card,2,700,1,weekend,1
+PAY00047,7341.02,1,1,authentication_failed,Card,3,635,1,weekday,0
+PAY00350,12271.99,1,1,bank_server_error,Card,0,382,6,weekend,1
+PAY00196,1635.98,0,1,card_declined,UPI,0,676,8,weekday,1
+PAY01000,7049.47,0,0,card_declined,UPI,1,815,13,weekday,1
+PAY00835,1845.6,1,1,network_error,UPI,1,858,23,weekday,1
+PAY00737,6779.24,1,1,authentication_failed,Wallet,1,192,16,weekend,0
+PAY00264,2183.08,2,1,insufficient_funds,Net Banking,1,224,2,weekend,1
+PAY00444,10754.51,2,1,transaction_limit,Net Banking,1,197,9,weekday,0
+PAY00676,4710.11,0,1,authentication_failed,Card,0,585,9,weekday,1
+PAY00305,3322.23,2,1,card_declined,Card,1,1299,11,weekday,1
+PAY00342,4533.41,1,0,insufficient_funds,Card,0,607,13,weekday,1
+PAY00967,2815.97,1,1,card_declined,UPI,0,149,3,weekday,1
+PAY00150,3999.84,0,1,insufficient_funds,Wallet,1,446,18,weekday,1
+PAY00125,7117.86,0,0,expired_card,Net Banking,2,1472,12,weekday,1
+PAY00787,3634.03,0,1,risk_declined,UPI,0,487,6,weekday,0
+PAY00051,4475.04,1,1,card_declined,UPI,1,216,21,weekend,1
+PAY00354,6989.87,1,1,risk_declined,Wallet,3,400,13,weekend,0
+PAY00928,4975.3,3,1,bank_server_error,Net Banking,5,518,7,weekend,0
+PAY00143,571.51,0,1,timeout,Net Banking,1,318,20,weekday,1
+PAY00471,4703.54,1,1,insufficient_funds,UPI,1,807,18,weekday,0
+PAY00400,1922.82,2,0,network_error,Net Banking,2,1001,18,weekday,0
+PAY00626,2224.05,1,1,bank_server_error,Card,1,321,23,weekend,1
+PAY00321,6805.7,3,0,timeout,Card,2,148,12,weekday,0
+PAY00020,3354.58,3,1,network_error,Card,2,1453,2,weekday,0
+PAY00810,4209.78,0,0,network_error,Card,0,523,18,weekday,1
+PAY00791,1856.29,1,1,authentication_failed,UPI,0,847,12,weekday,1
+PAY00809,2668.52,1,1,network_error,UPI,0,58,5,weekday,1
+PAY00408,7084.11,0,1,insufficient_funds,UPI,0,728,0,weekday,0
+PAY00538,9285.03,0,0,insufficient_funds,UPI,0,66,13,weekday,1
+PAY00621,2406.58,2,1,timeout,UPI,0,674,3,weekend,0
+PAY00039,1736.64,0,1,insufficient_funds,UPI,1,247,8,weekday,0
+PAY00176,4053.02,6,1,authentication_failed,UPI,1,294,5,weekday,0
+PAY00246,1171.7,0,0,expired_card,Card,1,603,13,weekday,0
+PAY00829,9823.96,0,1,transaction_limit,UPI,1,162,14,weekend,0
+PAY00668,5272.58,1,1,timeout,Card,1,756,18,weekday,0
+PAY00755,15961.13,1,0,network_error,UPI,1,406,2,weekday,1
+PAY00859,674.58,2,1,transaction_limit,Card,2,84,16,weekday,0
+PAY00155,3343.6,1,1,network_error,Card,0,671,21,weekend,1
+PAY00288,3659.62,0,0,transaction_limit,UPI,0,258,10,weekday,0
+PAY00603,10340.24,1,1,expired_card,Card,1,550,10,weekday,0
+PAY00570,4106.37,0,1,expired_card,UPI,1,781,23,weekday,1
+PAY00744,720.29,0,1,bank_server_error,UPI,2,1651,9,weekend,1
+PAY00018,1549.16,0,0,card_declined,UPI,0,495,1,weekday,1
+PAY00128,1274.19,2,1,bank_server_error,Net Banking,2,812,9,weekday,0
+PAY00323,9471.84,0,1,authentication_failed,Card,0,147,16,weekday,0
+PAY00256,6776.77,0,0,network_error,UPI,1,1244,13,weekend,1
+PAY00658,4069.62,3,1,insufficient_funds,Card,2,406,18,weekday,0
+PAY00965,3395.65,0,1,card_declined,Card,2,673,17,weekend,1
+PAY00191,15148.16,0,0,bank_server_error,Card,1,776,5,weekday,1
+PAY00116,2231.54,0,1,transaction_limit,Card,2,220,6,weekend,1
+PAY00617,6420.59,1,0,timeout,Card,0,462,19,weekday,1
+PAY00607,6694.26,0,0,expired_card,Net Banking,3,827,21,weekday,1
+PAY00181,10621.33,0,1,timeout,UPI,1,560,2,weekday,1
+PAY00302,950.26,1,1,authentication_failed,Card,0,1137,5,weekday,1
+PAY00760,5098.4,1,1,authentication_failed,UPI,1,828,22,weekday,1
+PAY00713,1452.01,1,1,bank_server_error,UPI,1,179,19,weekday,1
+PAY00724,980.81,1,1,customer_cancelled,Card,2,371,18,weekend,0
+PAY00686,2329.2,2,1,card_declined,UPI,0,231,14,weekday,1
+PAY00980,5103.89,2,0,expired_card,UPI,0,681,14,weekday,0
+PAY00518,1949.64,1,1,authentication_failed,UPI,3,725,7,weekday,1
+PAY00985,4811.42,2,1,network_error,Card,1,458,2,weekend,0
+PAY00046,4214.99,2,0,timeout,UPI,5,980,15,weekday,0
+PAY00910,1402.08,3,1,card_declined,Card,0,790,3,weekend,1
+PAY00158,8069.5,0,1,transaction_limit,Card,0,377,16,weekday,1
+PAY00852,2308.22,0,1,authentication_failed,Card,1,787,18,weekend,1
+PAY00172,5113.71,1,1,timeout,Net Banking,1,881,23,weekday,1
+PAY00017,4788.42,2,1,network_error,UPI,0,614,8,weekday,1
+PAY00512,2718.39,1,1,network_error,Card,0,394,15,weekday,1
+PAY00049,6232.89,1,1,transaction_limit,UPI,1,663,18,weekend,0
+PAY00972,3197.94,0,1,card_declined,Card,0,185,16,weekday,1
+PAY00941,4189.71,3,1,bank_server_error,Card,3,228,21,weekday,1
+PAY00516,4691.31,0,1,network_error,UPI,1,1558,11,weekday,1
+PAY00953,5252.28,0,0,risk_declined,UPI,0,521,5,weekday,0
+PAY00481,4230.76,1,1,timeout,UPI,1,881,23,weekend,0
+PAY00284,5150.12,1,1,bank_server_error,Card,2,355,12,weekend,1
+PAY00719,2597.25,3,1,timeout,UPI,2,526,23,weekend,1
+PAY00878,2900.67,1,1,network_error,Net Banking,0,741,14,weekday,1
+PAY00226,4249.31,3,1,insufficient_funds,Net Banking,0,1348,11,weekday,0
+PAY00027,5502.63,0,0,card_declined,Card,1,638,12,weekday,1
+PAY00955,1910.71,1,1,insufficient_funds,Net Banking,1,480,12,weekday,0
+PAY00438,1409.84,1,0,insufficient_funds,UPI,1,497,15,weekday,0
+PAY00952,5138.53,1,1,network_error,UPI,1,898,10,weekend,1
+PAY00365,3147.18,0,0,network_error,Net Banking,0,831,3,weekend,1
+PAY00230,2741.45,0,1,authentication_failed,Net Banking,3,458,7,weekday,0
+PAY00038,1713.66,2,0,card_declined,Card,0,163,0,weekday,0
+PAY00966,1097.17,3,1,card_declined,Net Banking,0,428,10,weekday,1
+PAY00375,5605.58,3,1,card_declined,Card,0,1245,18,weekday,1
+PAY00470,1544.94,0,1,timeout,UPI,0,1284,12,weekday,1
+PAY00968,1862.46,1,1,card_declined,UPI,1,113,11,weekday,1
+PAY00851,2573.34,1,1,insufficient_funds,Card,2,407,10,weekday,1
+PAY00705,8538.29,0,1,network_error,UPI,0,393,2,weekday,1
+PAY00842,3607.46,0,1,timeout,UPI,2,990,5,weekday,1
+PAY00195,1365.85,4,1,timeout,Card,0,505,7,weekday,1
+PAY00855,4435.11,0,1,card_declined,UPI,0,806,8,weekday,1
+PAY00865,1941.15,0,1,network_error,UPI,0,1000,18,weekend,1
+PAY00504,975.93,1,1,authentication_failed,Card,0,561,18,weekday,1
+PAY00970,3604.5,3,1,expired_card,UPI,0,675,3,weekday,1
+PAY00831,4900.35,1,1,bank_server_error,UPI,1,626,4,weekday,1
+PAY00580,4766.91,0,1,transaction_limit,UPI,0,1064,20,weekday,0
+PAY00969,7678.83,1,1,customer_cancelled,UPI,2,1312,14,weekday,0
+PAY00163,21369.45,3,1,bank_server_error,UPI,2,186,5,weekday,0
+PAY00909,3714.32,1,0,authentication_failed,Net Banking,1,1458,14,weekend,1
+PAY00153,843.06,1,1,authentication_failed,Card,1,741,17,weekday,1
+PAY00802,1393.22,2,0,authentication_failed,Card,1,1016,18,weekend,0
+PAY00994,10701.13,0,0,card_declined,UPI,2,586,7,weekday,0
+PAY00756,9192.65,1,1,card_declined,Card,0,322,0,weekday,0
+PAY00112,4283.79,2,0,card_declined,Net Banking,0,403,18,weekday,0
+PAY00227,29743.66,0,0,card_declined,UPI,1,1204,12,weekday,1
+PAY00689,2369.66,3,1,authentication_failed,Card,0,655,6,weekday,1
+PAY00104,6551.22,2,1,card_declined,Card,1,544,1,weekday,0
+PAY00422,1717.68,2,1,network_error,UPI,3,159,15,weekday,1
+PAY00420,11059.73,2,1,expired_card,Net Banking,0,1003,7,weekend,0
+PAY00751,3534.23,1,1,network_error,UPI,0,667,4,weekend,1
+PAY00587,1287.42,1,0,network_error,Wallet,1,791,16,weekday,1
+PAY00781,3350.96,0,1,card_declined,UPI,1,355,20,weekday,1
+PAY00673,1907.84,0,1,bank_server_error,UPI,3,151,5,weekday,0
+PAY00120,2855.68,1,1,insufficient_funds,UPI,0,374,5,weekday,1
+PAY00054,2667.24,0,0,insufficient_funds,Wallet,2,113,10,weekend,0
+PAY00152,1451.3,1,1,bank_server_error,Card,1,256,23,weekday,1
+PAY00404,2504.48,2,1,network_error,Net Banking,1,808,6,weekend,1
+PAY00946,2586.79,0,1,bank_server_error,UPI,0,520,6,weekday,1
+PAY00208,1242.06,2,1,expired_card,UPI,1,474,23,weekend,1
+PAY00659,9810.02,1,1,bank_server_error,UPI,0,863,12,weekday,1
+PAY00844,3233.16,0,1,card_declined,UPI,0,1547,11,weekday,1
+PAY00763,6565.15,2,0,authentication_failed,Card,1,1460,13,weekend,0
+PAY00009,3450.37,1,1,card_declined,UPI,1,578,14,weekday,0
+PAY00808,1215.54,0,1,network_error,UPI,1,537,2,weekday,1
+PAY00037,3176.91,1,1,timeout,Card,1,165,18,weekday,1
+PAY00453,18377.44,1,0,expired_card,UPI,2,450,15,weekday,0
+PAY00652,3018.37,2,1,insufficient_funds,UPI,0,650,1,weekday,0
+PAY00254,1512.76,2,1,insufficient_funds,UPI,1,1285,14,weekday,1
+PAY00304,2647.24,2,1,network_error,Card,2,497,4,weekday,0
+PAY00747,16130.6,3,1,network_error,Wallet,0,302,13,weekday,1
+PAY00572,3303.49,0,1,expired_card,UPI,1,279,15,weekday,1
+PAY00624,2066.89,0,1,insufficient_funds,Card,3,438,1,weekday,0
+PAY00733,5580.01,0,0,authentication_failed,UPI,0,147,19,weekday,1
+PAY00892,2178.62,2,1,insufficient_funds,Net Banking,0,928,10,weekend,0
+PAY00263,4263.57,1,1,network_error,UPI,0,415,10,weekday,1
+PAY00611,1452.96,1,0,timeout,Card,2,751,6,weekend,0
+PAY00298,2551.38,3,1,transaction_limit,UPI,1,850,5,weekday,0
+PAY00415,2747.28,0,0,bank_server_error,Net Banking,0,603,21,weekday,1
+PAY00151,3058.5,1,1,card_declined,UPI,0,746,2,weekday,1
+PAY00789,1394.73,4,0,card_declined,UPI,1,453,11,weekend,1
+PAY00641,982.67,0,1,timeout,Card,3,1705,7,weekday,0
+PAY00890,822.32,0,1,network_error,Card,1,605,11,weekday,1
+PAY00551,4855.18,1,0,card_declined,Wallet,0,906,16,weekday,1
+PAY00887,10084.18,3,0,insufficient_funds,UPI,1,511,0,weekday,0
+PAY00489,1697.16,1,1,bank_server_error,Card,1,187,23,weekend,1
+PAY00148,3105.24,2,1,risk_declined,Net Banking,1,680,22,weekday,0
+PAY00147,2080.23,0,1,insufficient_funds,UPI,0,764,15,weekday,0
+PAY00721,3225.25,0,1,authentication_failed,Card,0,802,4,weekend,1
+PAY00932,5123.5,1,1,timeout,UPI,1,137,20,weekday,0
+PAY00740,518.19,4,0,network_error,Card,0,1056,20,weekend,1
+PAY00660,2657.91,3,1,authentication_failed,UPI,0,240,18,weekday,0
+PAY00349,912.48,2,1,transaction_limit,Card,1,356,10,weekday,1
+PAY00464,600.93,1,1,insufficient_funds,UPI,0,256,16,weekday,1
+PAY00326,6513.79,1,1,card_declined,Card,0,829,7,weekday,1
+PAY00187,4089.87,1,0,card_declined,Card,1,422,14,weekday,1
+PAY00124,11112.52,0,1,authentication_failed,UPI,1,542,4,weekend,1
+PAY00854,3593.71,0,1,insufficient_funds,UPI,1,1000,20,weekday,1
+PAY00609,835.27,1,1,authentication_failed,UPI,1,680,4,weekend,0
+PAY00144,4394.34,2,0,risk_declined,UPI,0,976,9,weekday,0
+PAY00959,3494.29,1,0,insufficient_funds,Card,2,667,20,weekday,0
+PAY00198,2502.65,2,1,insufficient_funds,UPI,0,1819,4,weekday,0
+PAY00610,5529.47,2,1,bank_server_error,UPI,0,524,23,weekday,1
+PAY00280,4375.85,2,1,transaction_limit,Card,0,450,20,weekend,1
+PAY00294,394.99,0,1,timeout,UPI,0,584,5,weekday,1
+PAY00401,3004.45,0,0,insufficient_funds,UPI,1,535,17,weekday,0
+PAY00123,4219.68,1,0,bank_server_error,Net Banking,0,750,1,weekend,1
+PAY00184,8963.03,0,0,insufficient_funds,UPI,1,814,6,weekday,0
+PAY00203,3780.14,1,0,authentication_failed,UPI,0,575,3,weekday,0
+PAY00439,2006.96,0,1,timeout,Wallet,1,779,14,weekday,1
+PAY00247,1377.81,0,0,timeout,Card,2,1449,20,weekend,0
+PAY00416,4140.78,0,1,insufficient_funds,Card,1,373,19,weekday,1
+PAY00933,9424.14,0,1,card_declined,Net Banking,1,201,21,weekday,1
+PAY00766,768.51,2,1,card_declined,UPI,0,170,19,weekday,1
+PAY00907,2889.68,2,1,customer_cancelled,Net Banking,0,850,14,weekday,0
+PAY00836,1636.51,0,0,authentication_failed,UPI,2,1350,10,weekend,0
+PAY00888,2425.71,1,0,customer_cancelled,Wallet,0,942,18,weekday,1
+PAY00130,1592.29,3,1,expired_card,UPI,3,647,7,weekday,0
+PAY00638,1358.5,0,1,card_declined,UPI,1,441,21,weekday,1
+PAY00403,7030.18,0,0,expired_card,Wallet,1,1301,8,weekday,0
+PAY00785,3534.22,0,1,insufficient_funds,Net Banking,0,1080,22,weekday,0
+PAY00771,15216.94,1,0,bank_server_error,UPI,0,912,22,weekend,0
+PAY00736,4003.48,1,0,network_error,Card,1,748,18,weekday,0
+PAY00914,2062.5,1,1,network_error,Card,0,65,23,weekday,1
+PAY00220,1937.14,0,0,customer_cancelled,UPI,2,983,4,weekend,0
+PAY00642,6341.28,1,0,network_error,UPI,1,1182,8,weekday,1
+PAY00916,9361.87,0,1,insufficient_funds,UPI,1,1122,15,weekday,0
+PAY00753,1476.91,1,1,bank_server_error,Card,0,236,5,weekday,0
+PAY00807,3127.92,1,0,insufficient_funds,Card,2,824,17,weekday,0
+PAY00920,707.57,0,1,timeout,UPI,1,144,1,weekday,1
+PAY00625,5223.82,2,1,bank_server_error,UPI,0,1350,6,weekday,1
+PAY00875,700.9,0,0,network_error,Card,0,116,2,weekday,1
+PAY00761,10124.7,2,0,bank_server_error,UPI,0,1388,4,weekday,1
+PAY00387,5085.81,1,0,network_error,UPI,1,512,1,weekday,0
+PAY00973,4230.91,1,1,card_declined,Card,0,1267,13,weekday,1
+PAY00510,5197.0,3,1,authentication_failed,UPI,0,954,0,weekday,0
+PAY00268,4719.75,0,1,insufficient_funds,Card,2,744,3,weekday,0
+PAY00820,1328.76,2,1,network_error,UPI,0,277,16,weekday,0
+PAY00442,4628.0,2,0,card_declined,UPI,0,439,1,weekday,1
+PAY00497,737.91,0,1,expired_card,UPI,1,429,23,weekend,0
+PAY00113,2112.21,2,1,bank_server_error,UPI,1,261,10,weekday,0
+PAY00692,2840.18,1,0,card_declined,Net Banking,0,420,17,weekend,0
+PAY00233,4576.92,2,1,network_error,UPI,1,1109,13,weekend,1
+PAY00870,3364.11,2,1,insufficient_funds,Card,0,888,4,weekday,1
+PAY00608,5122.52,1,1,card_declined,UPI,2,308,21,weekday,1
+PAY00672,4411.78,3,0,expired_card,UPI,0,223,18,weekday,0
+PAY00374,7158.57,1,1,expired_card,Card,0,643,4,weekday,1
+PAY00982,952.81,0,0,insufficient_funds,Net Banking,1,2248,7,weekday,1
+PAY00843,15539.74,0,1,card_declined,Wallet,1,657,7,weekday,1
+PAY00234,9754.6,2,0,network_error,UPI,2,641,20,weekend,0
+PAY00786,4324.22,1,0,customer_cancelled,Card,0,282,7,weekday,0
+PAY00677,26522.01,4,1,customer_cancelled,UPI,1,661,11,weekday,0
+PAY00318,1934.7,2,1,bank_server_error,Card,0,281,4,weekday,1
+PAY00649,4024.88,1,0,authentication_failed,Net Banking,2,631,4,weekday,0
+PAY00411,992.93,1,0,authentication_failed,Card,2,369,11,weekend,0
+PAY00899,5258.3,0,0,customer_cancelled,UPI,0,426,4,weekend,0
+PAY00710,6068.58,1,1,authentication_failed,Card,0,423,16,weekday,1
+PAY00359,1680.21,2,1,timeout,Card,0,597,13,weekend,1
+PAY00259,3123.69,3,1,authentication_failed,UPI,1,289,10,weekday,1
+PAY00745,3807.38,2,1,card_declined,Card,0,583,3,weekend,1
+PAY00628,11145.2,0,1,card_declined,UPI,2,961,15,weekend,1
+PAY00633,2480.06,3,1,timeout,UPI,1,282,6,weekday,0
+PAY00283,7698.96,0,1,expired_card,Card,0,599,3,weekday,1
+PAY00377,2939.9,0,1,expired_card,Wallet,1,230,12,weekend,0
+PAY00385,897.34,1,1,authentication_failed,Card,2,589,0,weekday,1
+PAY00225,3779.83,0,1,card_declined,Net Banking,0,714,6,weekday,1
+PAY00954,1303.04,2,1,insufficient_funds,Wallet,1,580,19,weekday,1
+PAY00815,2052.19,1,0,risk_declined,Net Banking,1,125,18,weekday,0
+PAY00473,2748.5,2,0,card_declined,Net Banking,0,223,3,weekday,0
+PAY00348,5783.64,0,1,insufficient_funds,UPI,0,654,19,weekend,1
+PAY00506,2205.14,0,1,customer_cancelled,Card,0,1468,10,weekday,0
+PAY00640,5466.26,1,1,risk_declined,UPI,1,1133,20,weekday,0
+PAY00988,4637.37,1,0,network_error,Net Banking,0,171,2,weekday,0
+PAY00929,2872.93,1,0,timeout,Card,0,593,17,weekday,1
+PAY00906,20166.37,1,1,timeout,Card,0,1319,20,weekend,1
+PAY00620,12016.31,2,0,insufficient_funds,UPI,0,422,15,weekend,0
+PAY00856,3541.85,4,0,network_error,UPI,1,1381,18,weekday,0
+PAY00804,4831.47,4,0,authentication_failed,UPI,3,435,10,weekend,0
+PAY00646,3102.04,3,1,network_error,Card,0,351,15,weekday,1
+PAY00847,52184.66,0,1,timeout,UPI,1,585,6,weekend,0
+PAY00557,1844.6,1,0,risk_declined,Card,2,950,2,weekday,0
+PAY00958,23552.81,0,1,risk_declined,Card,2,766,8,weekday,0
+PAY00578,10109.95,0,1,timeout,Wallet,0,162,6,weekday,1
+PAY00796,3153.4,2,1,insufficient_funds,Card,1,119,9,weekday,0
+PAY00086,5294.61,1,1,transaction_limit,UPI,1,337,1,weekday,0
+PAY00243,785.6,1,1,card_declined,UPI,3,696,20,weekend,0
+PAY00699,1607.82,1,1,transaction_limit,Card,0,324,7,weekday,0
+PAY00160,1278.34,4,1,card_declined,UPI,0,516,7,weekday,1
+PAY00525,11542.21,1,1,transaction_limit,Net Banking,2,103,12,weekend,1
+PAY00036,9137.52,0,1,bank_server_error,UPI,1,345,11,weekday,1
+PAY00541,834.66,0,1,customer_cancelled,Card,1,1296,16,weekend,1
+PAY00171,2006.1,0,1,expired_card,UPI,0,297,2,weekday,1
+PAY00655,5765.74,0,0,network_error,Net Banking,1,428,18,weekday,1
+PAY00891,1724.06,1,1,card_declined,Card,2,338,16,weekday,1
+PAY00858,5022.78,1,0,bank_server_error,Net Banking,1,879,10,weekend,1
+PAY00848,7216.4,0,1,network_error,Card,2,420,21,weekday,1
+PAY00945,4475.95,0,1,expired_card,UPI,1,945,7,weekend,1
+PAY00734,2983.93,2,0,expired_card,Net Banking,0,184,3,weekday,0
+PAY00096,1022.98,0,0,expired_card,Wallet,0,372,16,weekday,0
+PAY00564,1825.87,1,1,authentication_failed,Card,0,969,4,weekday,0
+PAY00241,1661.02,0,1,bank_server_error,Card,0,991,11,weekday,1
+PAY00743,1469.96,1,1,insufficient_funds,Card,2,898,1,weekend,1
+PAY00575,4112.91,0,1,customer_cancelled,Wallet,0,490,13,weekday,1
+PAY00691,4570.98,1,1,transaction_limit,Card,2,138,15,weekday,1
+PAY00461,4570.33,2,0,risk_declined,UPI,1,417,2,weekend,0
+PAY00554,19738.58,1,1,network_error,Card,2,812,18,weekend,1
+PAY00889,417.41,1,1,card_declined,Card,2,554,21,weekday,1
+PAY00207,1709.19,1,0,timeout,UPI,1,208,19,weekend,0
+PAY00393,2343.75,1,1,card_declined,UPI,1,1249,13,weekday,1
+PAY00795,766.49,1,1,network_error,Card,1,188,9,weekday,1
+PAY00398,4252.86,1,1,card_declined,Card,1,708,17,weekday,1
+PAY00767,3757.83,0,0,customer_cancelled,Net Banking,5,287,3,weekday,0
+PAY00849,1918.59,0,1,network_error,UPI,2,797,5,weekend,1
+PAY00218,10908.6,2,0,risk_declined,Card,0,433,4,weekday,0
+PAY00005,666.57,2,1,timeout,UPI,1,536,11,weekday,1
+PAY00769,1179.27,1,0,timeout,UPI,2,495,10,weekday,1
+PAY00643,20036.29,2,1,authentication_failed,Card,0,423,5,weekday,0
+PAY00930,3732.65,0,1,customer_cancelled,UPI,4,243,16,weekday,1
+PAY00613,1043.51,2,1,card_declined,Card,0,1420,9,weekday,0
+PAY00739,883.27,0,1,timeout,Card,1,514,19,weekend,1
+PAY00547,4160.53,0,1,expired_card,Card,1,796,22,weekday,1
+PAY00726,12118.89,0,1,bank_server_error,Card,2,2171,12,weekday,1
+PAY00684,2247.1,0,0,customer_cancelled,UPI,2,601,15,weekday,1
+PAY00099,4916.37,0,0,insufficient_funds,UPI,0,852,10,weekday,0
+PAY00805,10454.1,1,0,expired_card,Card,1,1100,1,weekday,1
+PAY00728,6719.29,5,1,timeout,Card,3,635,22,weekday,0
+PAY00574,1629.09,2,0,customer_cancelled,UPI,0,359,0,weekday,0
+PAY00407,3167.21,0,1,insufficient_funds,UPI,0,104,13,weekday,1
+PAY00503,1898.77,1,1,insufficient_funds,UPI,0,257,14,weekend,0
+PAY00048,4232.61,0,0,expired_card,Net Banking,1,702,19,weekday,0
+PAY00033,2264.51,1,1,insufficient_funds,Card,1,505,14,weekday,0
+PAY00780,1156.63,2,0,network_error,Card,1,282,10,weekday,0
+PAY00840,2630.61,1,0,card_declined,UPI,1,665,10,weekday,0
+PAY00201,4663.2,1,0,timeout,UPI,1,552,3,weekday,0
+PAY00135,1002.58,0,1,network_error,UPI,0,268,18,weekday,0
+PAY00028,4774.98,1,0,expired_card,UPI,3,2152,5,weekday,0
+PAY00881,4239.68,3,1,timeout,UPI,2,1251,5,weekday,1
+PAY00231,1008.88,1,1,timeout,UPI,0,784,1,weekday,1
+PAY00490,6162.67,4,1,network_error,UPI,1,791,4,weekday,1
+PAY00773,4347.91,1,1,insufficient_funds,Net Banking,1,634,5,weekday,1
+PAY00379,13686.08,0,1,customer_cancelled,Card,3,307,18,weekday,1
+PAY00289,2730.32,2,1,timeout,UPI,2,478,21,weekday,1
+PAY00419,3300.24,0,1,insufficient_funds,Card,1,586,1,weekday,1
+PAY00675,7122.08,3,1,timeout,Card,1,287,2,weekday,0
+PAY00392,3665.5,1,1,insufficient_funds,UPI,0,400,0,weekday,1
+PAY00593,16458.91,1,0,card_declined,Card,0,748,0,weekday,0
+PAY00499,644.41,0,0,card_declined,UPI,1,210,10,weekday,0
+PAY00139,19105.65,0,1,network_error,Net Banking,1,234,13,weekday,1
+PAY00063,4019.28,0,0,card_declined,Card,0,306,10,weekend,1
+PAY00472,2476.25,1,0,expired_card,UPI,0,288,0,weekday,0
+PAY00648,803.88,0,1,network_error,UPI,0,448,18,weekend,1
+PAY00129,2031.91,4,1,authentication_failed,UPI,2,1080,23,weekday,0
+PAY00977,8950.78,0,1,insufficient_funds,Card,2,1611,10,weekday,1
+PAY00521,1534.39,2,0,bank_server_error,UPI,2,269,5,weekday,0
+PAY00839,16685.53,1,0,card_declined,Wallet,2,704,1,weekday,0
+PAY00963,1492.97,2,1,expired_card,UPI,2,1175,3,weekend,0
+PAY00065,6406.45,1,1,transaction_limit,UPI,1,387,23,weekend,0
+PAY00813,4339.31,2,1,risk_declined,UPI,0,250,9,weekday,1
+PAY00015,5207.74,0,1,insufficient_funds,UPI,2,523,6,weekend,0
+PAY00157,3909.84,0,1,risk_declined,Wallet,0,1193,9,weekday,1
+PAY00041,6583.25,2,1,timeout,UPI,1,1103,9,weekday,1
+PAY00493,2744.1,0,1,network_error,Card,2,274,1,weekend,1
+PAY00380,2371.96,4,1,insufficient_funds,Card,0,530,5,weekend,0
+PAY00188,1236.1,3,1,card_declined,UPI,1,233,5,weekday,0
+PAY00764,6014.26,1,1,card_declined,Card,1,1525,1,weekend,1
+PAY00217,5529.85,2,1,network_error,UPI,2,301,14,weekend,1
+PAY00792,1209.24,2,1,transaction_limit,UPI,1,997,12,weekday,0
+PAY00053,1014.28,1,0,timeout,UPI,1,633,5,weekend,0
+PAY00879,3205.46,0,1,authentication_failed,UPI,0,1001,1,weekday,0
+PAY00338,4562.96,3,1,insufficient_funds,UPI,0,1776,9,weekday,0
+PAY00749,2551.81,1,1,insufficient_funds,UPI,1,347,16,weekday,0
+PAY00720,1467.89,2,1,authentication_failed,UPI,0,681,8,weekday,1
+PAY00725,1597.29,3,1,timeout,Card,0,562,1,weekend,0
+PAY00296,4066.56,2,0,network_error,Card,1,567,13,weekend,1
+PAY00702,2841.87,3,1,bank_server_error,Card,2,379,23,weekday,0
+PAY00252,4679.0,5,0,timeout,UPI,0,1012,13,weekend,1
+PAY00727,4450.26,1,0,timeout,UPI,0,1002,9,weekday,0
+PAY00462,1723.57,2,1,insufficient_funds,Net Banking,3,210,18,weekend,1
+PAY00456,4010.54,1,1,card_declined,UPI,4,924,14,weekday,1
+PAY00997,6716.47,0,1,timeout,UPI,2,675,10,weekday,1
+PAY00816,4560.8,1,1,network_error,Net Banking,2,431,11,weekday,1
+PAY00863,3330.47,2,0,network_error,Card,2,418,22,weekend,1
+PAY00270,3500.25,1,1,timeout,Card,0,663,0,weekend,1
+PAY00202,11578.18,0,1,timeout,Net Banking,1,1309,17,weekday,1
+PAY00162,1889.52,1,0,authentication_failed,UPI,0,659,21,weekend,1
+PAY00556,2695.93,0,0,expired_card,Net Banking,0,622,4,weekend,1
+PAY00730,1351.42,1,1,timeout,UPI,1,580,22,weekday,1
+PAY00402,4137.21,2,0,card_declined,UPI,4,326,13,weekday,1
+PAY00703,1457.28,1,1,network_error,UPI,0,532,21,weekday,1
+PAY00477,8645.48,2,1,insufficient_funds,Card,1,1496,7,weekday,1
+PAY00822,11880.2,3,1,risk_declined,Card,2,623,14,weekend,0
+PAY00772,11112.83,1,1,timeout,Card,0,393,12,weekday,1
+PAY00106,2939.21,0,1,bank_server_error,UPI,1,845,1,weekday,1
+PAY00566,6561.79,3,1,timeout,UPI,1,378,9,weekday,1
+PAY00390,1053.28,2,1,risk_declined,UPI,1,1119,5,weekday,0
+PAY00002,1445.96,1,0,network_error,UPI,0,826,2,weekend,0
+PAY00938,3248.09,2,1,insufficient_funds,UPI,0,759,15,weekend,1
+PAY00983,4253.84,0,1,insufficient_funds,Card,1,565,21,weekday,0
+PAY00562,4650.22,1,1,bank_server_error,UPI,3,1627,12,weekend,1
+PAY00081,5160.44,1,1,insufficient_funds,UPI,1,1485,0,weekend,1
+PAY00206,3358.02,1,1,bank_server_error,Card,1,695,1,weekend,0
+PAY00035,5908.23,2,1,bank_server_error,Net Banking,0,139,4,weekend,1
+PAY00776,4158.44,0,1,authentication_failed,UPI,1,259,4,weekend,0
+PAY00509,2175.21,1,1,timeout,UPI,0,1000,7,weekday,1
+PAY00428,15110.91,1,1,network_error,Card,0,1425,4,weekday,1
+PAY00455,3712.62,0,1,network_error,Net Banking,1,287,23,weekday,1
+PAY00367,1860.25,0,1,transaction_limit,UPI,3,793,21,weekend,0
+PAY00092,3218.93,1,1,timeout,Card,0,984,17,weekday,1
+PAY00340,5872.09,2,1,customer_cancelled,Wallet,0,621,20,weekday,0
+PAY00898,1681.68,0,1,card_declined,Net Banking,2,197,11,weekend,1
+PAY00565,7522.66,2,1,transaction_limit,UPI,0,754,21,weekend,1
+PAY00346,605.93,2,1,bank_server_error,UPI,1,404,8,weekend,1
+PAY00777,1381.7,1,0,bank_server_error,UPI,1,581,16,weekday,0
+PAY00242,3230.51,1,1,card_declined,Card,1,1036,17,weekday,1
+PAY00014,9124.09,3,0,network_error,UPI,1,1263,5,weekend,1
+PAY00316,2720.12,2,0,card_declined,Card,0,632,0,weekend,0
+PAY00601,5424.15,0,1,authentication_failed,Card,1,846,11,weekday,0
+PAY00388,5464.77,1,0,insufficient_funds,UPI,2,431,23,weekday,0
+PAY00274,20737.76,2,1,network_error,UPI,0,659,13,weekday,1
+PAY00167,7726.07,0,0,insufficient_funds,UPI,2,472,18,weekday,0
+PAY00841,17673.46,0,0,network_error,Net Banking,1,772,20,weekend,1
+PAY00993,16086.45,0,0,customer_cancelled,Card,2,468,21,weekday,0
+PAY00647,5904.6,3,1,timeout,UPI,4,339,14,weekday,1
+PAY00819,4414.91,4,1,transaction_limit,Card,2,1208,6,weekday,0
+PAY00485,3335.08,2,1,network_error,UPI,0,191,22,weekday,1
+PAY00981,5189.45,0,0,timeout,Card,0,726,12,weekday,1
+PAY00505,281.65,0,1,insufficient_funds,UPI,2,1364,10,weekday,1
+PAY00832,13196.95,1,1,timeout,Net Banking,0,890,19,weekday,1
+PAY00244,1005.79,3,1,network_error,Net Banking,0,674,10,weekday,1
+PAY00567,3055.86,2,1,card_declined,UPI,3,975,18,weekday,1
+PAY00876,662.3,0,1,insufficient_funds,UPI,0,1124,3,weekend,1
+PAY00563,3655.5,2,1,expired_card,Card,1,544,9,weekend,1
+PAY00687,6854.77,4,1,transaction_limit,UPI,0,342,10,weekend,0
+PAY00190,14239.95,0,0,bank_server_error,UPI,3,394,16,weekday,1
+PAY00783,16130.15,1,1,card_declined,UPI,1,989,17,weekend,0
+PAY00700,2950.06,0,1,insufficient_funds,Net Banking,0,703,10,weekday,1
+PAY00476,2623.2,0,1,timeout,Card,0,1352,12,weekday,0
+PAY00682,5954.13,0,1,transaction_limit,UPI,1,308,1,weekend,1
+PAY00511,928.62,2,1,customer_cancelled,Card,0,167,19,weekend,0
+PAY00059,1676.66,2,0,network_error,Card,0,809,2,weekday,0
+PAY00475,5924.28,2,0,card_declined,UPI,2,561,16,weekday,0
+PAY00561,3295.92,2,1,insufficient_funds,Card,0,764,20,weekday,1
+PAY00857,4659.27,1,1,card_declined,UPI,0,680,19,weekday,1
+PAY00748,5428.25,1,0,card_declined,UPI,0,300,12,weekday,1
+PAY00253,15213.09,1,1,network_error,Net Banking,2,298,9,weekend,1
+PAY00022,1962.02,1,1,timeout,Card,0,280,13,weekday,1
+PAY00314,5083.03,3,1,card_declined,UPI,1,439,13,weekend,0
+PAY00460,3423.9,1,0,timeout,Card,0,769,4,weekend,1
+PAY00161,1540.97,3,1,authentication_failed,Card,1,817,2,weekday,0
+PAY00277,1829.72,0,1,bank_server_error,UPI,0,377,5,weekday,1
+PAY00956,11220.28,1,1,bank_server_error,UPI,1,813,3,weekday,1
+PAY00192,3004.68,0,1,insufficient_funds,UPI,2,874,20,weekday,0
+PAY00386,1782.02,1,1,insufficient_funds,Card,2,395,11,weekday,1
+PAY00806,8915.09,3,1,network_error,UPI,2,434,6,weekday,0
+PAY00414,6617.92,1,1,card_declined,UPI,1,372,0,weekday,1
+PAY00492,4779.4,1,0,transaction_limit,Card,2,801,4,weekend,1
+PAY00344,4975.72,0,1,bank_server_error,UPI,1,521,13,weekday,1
+PAY00770,14618.78,2,0,expired_card,UPI,0,457,8,weekday,0
+PAY00309,5743.22,0,1,customer_cancelled,UPI,1,483,18,weekend,1
+PAY00662,3448.14,0,1,network_error,UPI,1,363,14,weekday,1
+PAY00131,2512.87,0,1,insufficient_funds,UPI,2,288,8,weekday,1
+PAY00664,2616.33,2,1,insufficient_funds,UPI,1,211,2,weekday,0
+PAY00872,1485.95,1,0,network_error,UPI,0,554,4,weekday,1
+PAY00100,1621.1,1,0,customer_cancelled,Card,1,864,17,weekday,0
+PAY00373,7250.26,1,0,expired_card,UPI,0,222,20,weekday,0
+PAY00088,3537.37,0,1,authentication_failed,Card,3,335,16,weekend,1
+PAY00459,4645.38,1,1,expired_card,UPI,0,1289,3,weekend,1
+PAY00331,12645.57,0,1,insufficient_funds,Net Banking,1,594,11,weekend,1
+PAY00215,2649.16,3,1,card_declined,UPI,0,582,16,weekday,1
+PAY00467,2727.95,2,1,card_declined,UPI,0,577,11,weekend,0
+PAY00122,4076.13,2,1,card_declined,Net Banking,2,674,19,weekday,1
+PAY00615,1763.24,1,1,transaction_limit,UPI,0,487,20,weekend,1
+PAY00021,2991.07,1,0,network_error,UPI,0,906,16,weekday,0
+PAY00701,9014.05,1,1,insufficient_funds,UPI,1,647,17,weekend,0
+PAY00072,1335.72,3,1,timeout,UPI,3,298,10,weekend,1
+PAY00107,1560.87,1,1,insufficient_funds,Card,2,525,2,weekday,0
+PAY00271,1895.42,0,1,card_declined,UPI,1,662,10,weekend,1
+PAY00861,1518.99,1,1,timeout,UPI,1,1154,11,weekday,1
+PAY00436,2092.82,2,1,authentication_failed,UPI,2,469,13,weekday,0
+PAY00103,2585.55,1,0,bank_server_error,Card,0,1013,14,weekend,1

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Analysis - RevenueAI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">R</div>
+
+            <div>
+                <h2>RevenueAI</h2>
+                <small>Recovery Agent</small>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="/">▣ &nbsp; Dashboard</a>
+            <a href="/add-payment/">＋ &nbsp; Add Payment</a>
+            <a href="/recovery/">◉ &nbsp; Recovery</a>
+            <a href="/analytics/">▤ &nbsp; Analytics</a>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div>🤖 AI Agent</div>
+            <small>Monitoring payments</small>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <div class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    AI RECOVERY ANALYSIS
+                </p>
+
+                <h1>
+                    Payment Analysis
+                </h1>
+
+                <p class="subtitle">
+                    AI-generated recovery recommendation
+                </p>
+
+            </div>
+
+            <a href="/recovery/" class="add-btn">
+                ← Back to Recovery
+            </a>
+
+        </div>
+
+
+        <!-- AI HEADER -->
+        <div class="ai-panel">
+
+            <div class="ai-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <h2>
+                    AI Recovery Recommendation
+                </h2>
+
+                <p>
+                    The AI agent analyzed this payment using
+                    customer and payment history.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAIN STATS -->
+        <div class="stats">
+
+            <!-- CUSTOMER -->
+            <div class="stat-card">
+
+                <div class="stat-title">
+                    Customer
+                </div>
+
+                <div class="stat-number">
+                    {{ payment.customer }}
+                </div>
+
+            </div>
+
+
+            <!-- AMOUNT -->
+            <div class="stat-card">
+
+                <div class="stat-title">
+                    Payment Amount
+                </div>
+
+                <div class="stat-number">
+                    ₹{{ payment.amount }}
+                </div>
+
+            </div>
+
+
+            <!-- AI PROBABILITY -->
+            <div class="stat-card ai-card">
+
+                <div class="stat-title">
+                    Recovery Probability
+                </div>
+
+                <div class="stat-number">
+                    {{ probability }}%
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PAYMENT DETAILS -->
+        <div class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>
+                        Payment Details
+                    </h2>
+
+                    <p class="subtitle">
+                        Information used by the AI model
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="analytics-values">
+
+                <!-- PAYMENT ID -->
+                <div class="value-box">
+
+                    <div class="value-icon failed-icon">
+                        #
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Payment ID
+                        </span>
+
+                        <strong>
+                            {{ payment.payment_id }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAILURE REASON -->
+                <div class="value-box">
+
+                    <div class="value-icon failed-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Failure Reason
+                        </span>
+
+                        <strong>
+                            {{ payment.reason }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREVIOUS FAILURES -->
+                <div class="value-box">
+
+                    <div class="value-icon failed-icon">
+                        ↻
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Previous Failures
+                        </span>
+
+                        <strong>
+                            {{ previous_failures }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CUSTOMER HISTORY -->
+                <div class="value-box">
+
+                    <div class="value-icon success-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Customer History
+                        </span>
+
+                        <strong>
+
+                            {% if customer_history %}
+                                Existing Customer
+                            {% else %}
+                                New Customer
+                            {% endif %}
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- AI DECISION -->
+        <div class="section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        AI Decision
+                    </h2>
+
+                    <p class="subtitle">
+                        Recommended recovery strategy
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="ai-panel">
+
+                <div class="ai-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h2>
+                        {{ recommendation }}
+                    </h2>
+
+                    <p>
+                        Based on the payment amount,
+                        failure reason, previous failures,
+                        and customer history, the AI model
+                        recommends this recovery action.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MODEL INFORMATION -->
+        <div class="section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        How AI Analyzed This Payment
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="analytics-values">
+
+                <div class="value-box">
+
+                    <div class="value-icon">
+                        1
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Payment Amount
+                        </span>
+
+                        <strong>
+                            ₹{{ payment.amount }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="value-box">
+
+                    <div class="value-icon">
+                        2
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Previous Failures
+                        </span>
+
+                        <strong>
+                            {{ previous_failures }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="value-box">
+
+                    <div class="value-icon">
+                        3
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Customer History
+                        </span>
+
+                        <strong>
+
+                            {% if customer_history %}
+                                Positive
+                            {% else %}
+                                No Previous Success
+                            {% endif %}
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="value-box">
+
+                    <div class="value-icon">
+                        4
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Failure Reason
+                        </span>
+
+                        <strong>
+                            {{ payment.reason }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

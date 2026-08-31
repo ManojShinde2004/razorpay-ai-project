@@ -1,0 +1,866 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 240px;
+    min-width: 240px;
+    background: #111827;
+    color: white;
+    padding: 25px 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #635bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.brand h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.brand small {
+    color: #9ca3af;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 13px 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 12px;
+}
+
+.menu a:hover,
+.menu a.active {
+    background: #252f43;
+    color: white;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding: 15px;
+    border-top: 1px solid #273244;
+    color: #cbd5e1;
+}
+
+.sidebar-bottom small {
+    color: #64748b;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    flex: 1;
+    padding: 35px 45px;
+    max-width: 1500px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eyebrow {
+    color: #635bff;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-top: 8px;
+}
+
+.add-btn {
+    background: #635bff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.add-btn:hover {
+    background: #5148e5;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.stat-title {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.stat-number {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 12px 0 5px;
+}
+
+.stat-label {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.failed-card {
+    border-left: 4px solid #ef4444;
+}
+
+.success-card {
+    border-left: 4px solid #22c55e;
+}
+
+.ai-card {
+    border-left: 4px solid #635bff;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.section {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 25px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.section-header h2 {
+    margin: 0;
+}
+
+.section-header p {
+    margin: 5px 0 0;
+    color: #64748b;
+}
+
+.live {
+    color: #16a34a;
+    font-size: 13px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 14px 25px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 12px;
+}
+
+td {
+    padding: 18px 25px;
+    border-top: 1px solid #eef2f7;
+}
+
+.badge {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge.failed {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.badge.success {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.analyze-btn {
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 8px 12px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.dash {
+    color: #94a3b8;
+}
+
+.empty {
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
+}
+
+
+/* =========================
+   AI PANEL
+========================= */
+
+.ai-panel {
+    margin-top: 25px;
+    padding: 25px;
+    background: #111827;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.ai-icon {
+    font-size: 35px;
+}
+
+.ai-panel h2 {
+    margin: 0 0 8px;
+}
+
+.ai-panel p {
+    color: #cbd5e1;
+}
+
+.pipeline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.pipeline span {
+    background: #252f43;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.pipeline b {
+    color: #818cf8;
+}
+
+
+/* =========================
+   ADD PAYMENT PAGE
+========================= */
+
+.payment-form-card {
+    margin-top: 30px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 950px;
+}
+
+.payment-form-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.payment-form-header h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #172033;
+}
+
+.payment-form-header p {
+    margin: 6px 0 0;
+    color: #64748b;
+}
+
+.payment-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #eef2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.form-group input,
+.form-group select {
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #172033;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #635bff;
+    box-shadow: 0 0 0 3px #eef2ff;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.secondary-btn {
+    display: inline-block;
+    background: white;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.secondary-btn:hover {
+    background: #f8fafc;
+}
+
+.add-payment-btn {
+    border: none;
+    background: #635bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.add-payment-btn:hover {
+    background: #5148e5;
+}
+
+
+/* =========================
+   AI ANALYSIS PAGE
+========================= */
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.analysis-card,
+.ai-result {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.analysis-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.analysis-card-header h2 {
+    margin: 0;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-top: 1px solid #eef2f7;
+}
+
+.detail-row span {
+    color: #64748b;
+}
+
+.ai-result {
+    background: #111827;
+    color: white;
+}
+
+.ai-result-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ai-result-title h2 {
+    margin: 0;
+}
+
+.big-ai {
+    font-size: 40px;
+}
+
+.probability {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.probability span {
+    font-size: 30px;
+    color: #a5b4fc;
+}
+
+.progress {
+    width: 100%;
+    height: 12px;
+    background: #374151;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #818cf8;
+    border-radius: 10px;
+}
+
+.prediction-text {
+    color: #cbd5e1;
+    margin-top: 15px;
+}
+
+.recommendation {
+    margin: 25px 0;
+    padding: 25px;
+    background: #eef2ff;
+    border: 1px solid #c7d2fe;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.recommendation-icon {
+    font-size: 35px;
+}
+
+.recommendation h2 {
+    margin: 5px 0 10px;
+    color: #3730a3;
+}
+
+.recommendation p {
+    color: #475569;
+}
+
+.factors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 25px;
+}
+
+.factor {
+    display: flex;
+    gap: 15px;
+    padding: 18px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.factor > span {
+    font-size: 25px;
+}
+
+.factor strong {
+    display: block;
+}
+
+.factor p {
+    margin: 6px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.bottom-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+
+/* =========================
+   ANALYTICS
+========================= */
+
+.analytics-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 25px;
+}
+
+.value-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.value-box span {
+    display: block;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.value-box strong {
+    font-size: 26px;
+}
+
+.value-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.success-icon {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.failed-icon {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        padding: 25px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .analysis-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .factors {
+        grid-template-columns: 1fr;
+    }
+
+    .analytics-values {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .main {
+        padding: 20px;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .payment-form-card {
+        padding: 20px;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .form-actions a,
+    .form-actions button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* =========================
+   ADD PAYMENT PAGE
+========================= */
+
+.payment-form-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 30px;
+    max-width: 850px;
+}
+
+.payment-form-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.payment-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #eef2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.payment-form-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.payment-form-header p {
+    margin: 6px 0 0;
+    color: #64748b;
+}
+
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 44px;
+    padding: 10px 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    color: #172033;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #635bff;
+    box-shadow: 0 0 0 3px #eef2ff;
+}
+
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.primary-btn {
+    border: none;
+    background: #635bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #5149e8;
+}
+
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.secondary-btn:hover {
+    background: #f8fafc;
+}
+
+
+@media (max-width: 900px) {
+
+    .payment-form-card {
+        max-width: 100%;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .form-actions {
+        justify-content: stretch;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        flex: 1;
+    }
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Recovery - RevenueAI</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                R
+            </div>
+
+            <div>
+
+                <h2>
+                    RevenueAI
+                </h2>
+
+                <small>
+                    Recovery Agent
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu">
+
+            <a href="/">
+                ▣ &nbsp; Dashboard
+            </a>
+
+            <a href="/add-payment/">
+                ＋ &nbsp; Add Payment
+            </a>
+
+            <a
+                href="/recovery/"
+                class="active"
+            >
+                ◉ &nbsp; Recovery
+            </a>
+
+            <a href="/analytics/">
+                ▤ &nbsp; Analytics
+            </a>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <div>
+                🤖 AI Agent
+            </div>
+
+            <small>
+                Monitoring payments
+            </small>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+
+        <div class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    RECOVERY
+                </p>
+
+                <h1>
+                    Payment Recovery
+                </h1>
+
+                <p class="subtitle">
+                    Failed payments requiring attention
+                </p>
+
+            </div>
+
+
+            <a
+                href="/"
+                class="add-btn"
+            >
+                ← Dashboard
+            </a>
+
+        </div>
+
+
+
+        <!-- STATISTICS -->
+
+        <div class="stats">
+
+
+            <div class="stat-card failed-card">
+
+                <div class="stat-title">
+                    Failed Payments
+                </div>
+
+                <div class="stat-number">
+                    {{ total_failed }}
+                </div>
+
+                <div class="stat-label">
+                    Recovery opportunities
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card ai-card">
+
+                <div class="stat-title">
+                    At-Risk Amount
+                </div>
+
+                <div class="stat-number">
+                    ₹{{ failed_amount|floatformat:0 }}
+                </div>
+
+                <div class="stat-label">
+                    Failed payment value
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- RECOVERY TABLE -->
+
+        <div class="section">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Recovery Opportunities
+                    </h2>
+
+                    <p>
+                        Failed payments that can be analyzed
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                PAYMENT
+                            </th>
+
+                            <th>
+                                CUSTOMER
+                            </th>
+
+                            <th>
+                                AMOUNT
+                            </th>
+
+                            <th>
+                                REASON
+                            </th>
+
+                            <th>
+                                ACTION
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                    {% for payment in payments %}
+
+                        <tr>
+
+                            <td>
+
+                                <strong>
+                                    {{ payment.payment_id }}
+                                </strong>
+
+                            </td>
+
+
+                            <td>
+                                {{ payment.customer }}
+                            </td>
+
+
+                            <td>
+                                ₹{{ payment.amount }}
+                            </td>
+
+
+                            <td>
+                                {{ payment.reason }}
+                            </td>
+
+
+                            <td>
+
+                                <a
+                                    href="/analyze/{{ payment.payment_id }}/"
+                                    class="analyze-btn"
+                                >
+                                    🤖 Analyze
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                    {% empty %}
+
+                        <tr>
+
+                            <td
+                                colspan="5"
+                                class="empty"
+                            >
+                                No failed payments found.
+                            </td>
+
+                        </tr>
+
+                    {% endfor %}
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

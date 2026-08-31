@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Analytics - RevenueAI</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                R
+            </div>
+
+            <div>
+
+                <h2>
+                    RevenueAI
+                </h2>
+
+                <small>
+                    Recovery Agent
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu">
+
+            <a href="/">
+                ▣ &nbsp; Dashboard
+            </a>
+
+            <a href="/add-payment/">
+                ＋ &nbsp; Add Payment
+            </a>
+
+            <a href="/recovery/">
+                ◉ &nbsp; Recovery
+            </a>
+
+            <a
+                href="/analytics/"
+                class="active"
+            >
+                ▤ &nbsp; Analytics
+            </a>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <div>
+                🤖 AI Agent
+            </div>
+
+            <small>
+                Monitoring payments
+            </small>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+
+        <!-- TOP -->
+
+        <div class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    ANALYTICS
+                </p>
+
+                <h1>
+                    Payment Analytics
+                </h1>
+
+                <p class="subtitle">
+                    Overview of your payment performance
+                </p>
+
+            </div>
+
+
+            <a
+                href="/"
+                class="add-btn"
+            >
+                ← Dashboard
+            </a>
+
+        </div>
+
+
+
+        <!-- STATISTICS -->
+
+        <div class="stats">
+
+
+            <div class="stat-card">
+
+                <div class="stat-title">
+                    Total Transactions
+                </div>
+
+                <div class="stat-number">
+                    {{ total }}
+                </div>
+
+                <div class="stat-label">
+                    All payments
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card failed-card">
+
+                <div class="stat-title">
+                    Failed Transactions
+                </div>
+
+                <div class="stat-number">
+                    {{ failed }}
+                </div>
+
+                <div class="stat-label">
+                    Payments requiring recovery
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card success-card">
+
+                <div class="stat-title">
+                    Successful Transactions
+                </div>
+
+                <div class="stat-number">
+                    {{ successful }}
+                </div>
+
+                <div class="stat-label">
+                    Successfully completed
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card ai-card">
+
+                <div class="stat-title">
+                    Total Payment Value
+                </div>
+
+                <div class="stat-number">
+                    ₹{{ total_amount|floatformat:0 }}
+                </div>
+
+                <div class="stat-label">
+                    Transaction value
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PAYMENT VALUE -->
+
+        <div class="section">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Payment Value
+                    </h2>
+
+                    <p>
+                        Breakdown of successful and failed payment value
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="analytics-values">
+
+
+                <!-- SUCCESS -->
+
+                <div class="value-box">
+
+                    <div class="value-icon success-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Successful Payment Value
+                        </span>
+
+                        <strong>
+                            ₹{{ success_amount|floatformat:0 }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FAILED -->
+
+                <div class="value-box">
+
+                    <div class="value-icon failed-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Failed Payment Value
+                        </span>
+
+                        <strong>
+                            ₹{{ failed_amount|floatformat:0 }}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- AI INSIGHTS -->
+
+        <div class="ai-panel">
+
+            <div class="ai-icon">
+                🤖
+            </div>
+
+
+            <div>
+
+                <h2>
+                    AI Recovery Insights
+                </h2>
+
+
+                <p>
+
+                    Failed payments worth
+
+                    <strong>
+                        ₹{{ failed_amount|floatformat:0 }}
+                    </strong>
+
+                    are potential recovery opportunities.
+
+                </p>
+
+
+                <a
+                    href="/recovery/"
+                    class="analyze-btn"
+                >
+                    View Failed Payments
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

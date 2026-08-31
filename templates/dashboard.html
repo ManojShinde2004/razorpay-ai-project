@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>RevenueAI Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="layout">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                R
+            </div>
+
+            <div>
+
+                <h2>
+                    RevenueAI
+                </h2>
+
+                <small>
+                    Recovery Agent
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu">
+
+            <a href="/" class="active">
+
+                <span>▣</span>
+
+                Dashboard
+
+            </a>
+
+
+            <a href="/add-payment/">
+
+                <span>＋</span>
+
+                Add Payment
+
+            </a>
+
+
+            <a href="/recovery/">
+
+                <span>◉</span>
+
+                Recovery
+
+            </a>
+
+
+            <a href="/analytics/">
+
+                <span>▤</span>
+
+                Analytics
+
+            </a>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <div>
+                🤖 AI Agent
+            </div>
+
+            <small>
+                Monitoring payments
+            </small>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+
+        <!-- TOP -->
+
+        <div class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    OVERVIEW
+                </p>
+
+                <h1>
+                    Revenue Recovery Dashboard
+                </h1>
+
+                <p class="subtitle">
+                    AI-powered payment recovery and insights
+                </p>
+
+            </div>
+
+
+            <a
+                href="/add-payment/"
+                class="add-btn"
+            >
+                + Add Payment
+            </a>
+
+        </div>
+
+
+
+        <!-- STATISTICS -->
+
+        <div class="stats">
+
+
+            <div class="stat-card">
+
+                <div class="stat-title">
+                    Total Payments
+                </div>
+
+                <div class="stat-number">
+                    {{ total }}
+                </div>
+
+                <div class="stat-label">
+                    All transactions
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card failed-card">
+
+                <div class="stat-title">
+                    Failed Payments
+                </div>
+
+                <div class="stat-number">
+                    {{ failed }}
+                </div>
+
+                <div class="stat-label">
+                    Need attention
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card success-card">
+
+                <div class="stat-title">
+                    Successful Payments
+                </div>
+
+                <div class="stat-number">
+                    {{ successful }}
+                </div>
+
+                <div class="stat-label">
+                    Completed
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card ai-card">
+
+                <div class="stat-title">
+                    AI Recovery
+                </div>
+
+                <div class="stat-number">
+                    {{ recovered }}
+                </div>
+
+                <div class="stat-label">
+                    Potential recoveries
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PAYMENTS -->
+
+        <div class="section">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Payments
+                    </h2>
+
+                    <p>
+                        Recent payment transactions
+                    </p>
+
+                </div>
+
+
+                <span class="live">
+                    ● Live
+                </span>
+
+            </div>
+
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                PAYMENT
+                            </th>
+
+                            <th>
+                                CUSTOMER
+                            </th>
+
+                            <th>
+                                AMOUNT
+                            </th>
+
+                            <th>
+                                STATUS
+                            </th>
+
+                            <th>
+                                AI ACTION
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                    {% for payment in payments %}
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    {{ payment.payment_id }}
+                                </strong>
+                            </td>
+
+
+                            <td>
+                                {{ payment.customer }}
+                            </td>
+
+
+                            <td>
+                                ₹{{ payment.amount }}
+                            </td>
+
+
+                            <td>
+
+                                {% if payment.status|lower == "failed" %}
+
+                                    <span class="badge failed">
+                                        Failed
+                                    </span>
+
+                                {% else %}
+
+                                    <span class="badge success">
+                                        Success
+                                    </span>
+
+                                {% endif %}
+
+                            </td>
+
+
+                            <td>
+
+                                {% if payment.status|lower == "failed" %}
+
+                                    <a
+                                        href="/analyze/{{ payment.payment_id }}/"
+                                        class="analyze-btn"
+                                    >
+                                        🤖 Analyze
+                                    </a>
+
+                                {% else %}
+
+                                    <span class="dash">
+                                        —
+                                    </span>
+
+                                {% endif %}
+
+                            </td>
+
+                        </tr>
+
+
+                    {% empty %}
+
+                        <tr>
+
+                            <td
+                                colspan="5"
+                                class="empty"
+                            >
+                                No payments found.
+                            </td>
+
+                        </tr>
+
+                    {% endfor %}
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- AI PANEL -->
+
+        <div class="ai-panel">
+
+            <div class="ai-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <h2>
+                    AI Revenue Recovery Agent
+                </h2>
+
+                <p>
+                    The AI model analyzes failed payments
+                    and predicts the probability of successful
+                    recovery.
+                </p>
+
+
+                <div class="pipeline">
+
+                    <span>
+                        Payment
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                    <span>
+                        ML Prediction
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                    <span>
+                        Recovery Action
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Payment - RevenueAI</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        /* =========================
+           ADD PAYMENT FORM
+        ========================= */
+
+        .payment-form-card {
+            margin-top: 30px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 950px;
+        }
+
+        .payment-form-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .payment-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background: #eef2ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .payment-form-header h2 {
+            margin: 0;
+            font-size: 22px;
+            color: #172033;
+        }
+
+        .payment-form-header p {
+            margin: 6px 0 0;
+            color: #64748b;
+        }
+
+        .payment-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #374151;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            height: 44px;
+            padding: 10px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: #ffffff;
+            color: #172033;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-group input::placeholder {
+            color: #9ca3af;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #635bff;
+            box-shadow: 0 0 0 3px #eef2ff;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-top: 10px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .secondary-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border: 1px solid #d1d5db;
+            color: #374151;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .secondary-btn:hover {
+            background: #f8fafc;
+        }
+
+        .primary-btn {
+            border: none;
+            background: #635bff;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .primary-btn:hover {
+            background: #5148e5;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .payment-form-card {
+                max-width: 100%;
+            }
+
+            .form-actions {
+                justify-content: stretch;
+            }
+
+            .primary-btn,
+            .secondary-btn {
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .payment-form-card {
+                padding: 20px;
+            }
+
+            .form-actions {
+                flex-direction: column-reverse;
+            }
+
+            .primary-btn,
+            .secondary-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+<div class="layout">
+
+    <!-- =========================
+         SIDEBAR
+    ========================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                R
+            </div>
+
+            <div>
+                <h2>RevenueAI</h2>
+                <small>Recovery Agent</small>
+            </div>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="/">
+                ▣
+                <span>Dashboard</span>
+            </a>
+
+            <a href="/add-payment/" class="active">
+                +
+                <span>Add Payment</span>
+            </a>
+
+            <a href="/recovery/">
+                ◉
+                <span>Recovery</span>
+            </a>
+
+            <a href="/analytics/">
+                ▤
+                <span>Analytics</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            🤖 AI Agent
+
+            <br>
+
+            <small>
+                Monitoring payments
+            </small>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
+
+    <main class="main">
+
+
+        <!-- TOP BAR -->
+
+        <div class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    PAYMENT MANAGEMENT
+                </p>
+
+                <h1>
+                    Add a Payment
+                </h1>
+
+                <p class="subtitle">
+                    Add a transaction to the RevenueAI system.
+                </p>
+
+            </div>
+
+
+            <a href="/" class="add-btn">
+                ← Dashboard
+            </a>
+
+        </div>
+
+
+
+        <!-- =========================
+             PAYMENT FORM CARD
+        ========================= -->
+
+        <div class="payment-form-card">
+
+
+            <!-- HEADER -->
+
+            <div class="payment-form-header">
+
+                <div class="payment-icon">
+                    💳
+                </div>
+
+                <div>
+
+                    <h2>
+                        Payment Details
+                    </h2>
+
+                    <p>
+                        Enter the transaction information below.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FORM -->
+
+            <form method="POST" class="payment-form">
+
+                {% csrf_token %}
+
+
+                <!-- PAYMENT ID -->
+
+                <div class="form-group">
+
+                    <label for="payment_id">
+                        Payment ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="payment_id"
+                        name="payment_id"
+                        placeholder="e.g. PAY006"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- CUSTOMER -->
+
+                <div class="form-group">
+
+                    <label for="customer">
+                        Customer
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customer"
+                        name="customer"
+                        placeholder="Enter customer name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- AMOUNT -->
+
+                <div class="form-group">
+
+                    <label for="amount">
+                        Amount
+                    </label>
+
+                    <input
+                        type="number"
+                        id="amount"
+                        name="amount"
+                        placeholder="Enter payment amount"
+                        min="1"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- STATUS -->
+
+                <div class="form-group">
+
+                    <label for="status">
+                        Status
+                    </label>
+
+                    <select
+                        id="status"
+                        name="status"
+                    >
+
+                        <option value="Failed">
+                            Failed
+                        </option>
+
+                        <option value="Success">
+                            Success
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- FAILURE REASON -->
+
+                <div class="form-group">
+
+                    <label for="reason">
+                        Failure Reason
+                    </label>
+
+                    <select
+                        id="reason"
+                        name="reason"
+                    >
+
+                        <option value="Card Declined">
+                            Card Declined
+                        </option>
+
+                        <option value="Timeout">
+                            Timeout
+                        </option>
+
+                        <option value="Insufficient Funds">
+                            Insufficient Funds
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- BUTTONS -->
+
+                <div class="form-actions">
+
+                    <a
+                        href="/"
+                        class="secondary-btn"
+                    >
+                        Cancel
+                    </a>
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                    >
+                        + Add Payment
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+</body>
+</html>
