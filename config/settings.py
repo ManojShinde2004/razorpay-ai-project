@@ -6,7 +6,7 @@ SECRET_KEY = 'django-insecure--l*5unegi!^4ghl9gv@8w!s3-6wrr=-qb4$)76%jvig=87_#g4
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'recovery',
