@@ -1,63 +1,261 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.pipeline import Pipeline
 import joblib
+import os
 
-data = pd.DataFrame({
-    "amount": [
-        500, 1000, 1500, 2000, 2500,
-        3000, 3500, 4000, 4500, 5000,
-        6000, 7000, 8000, 9000, 10000,
-        1200, 2200, 3200, 5500, 7500
-    ],
 
-    "previous_failures": [
-        0, 0, 1, 1, 2,
-        2, 3, 1, 2, 3,
-        3, 2, 4, 5, 4,
-        0, 1, 2, 3, 4
-    ],
+# ============================================================
+# PATH CONFIGURATION
+# ============================================================
 
-    "customer_history": [
-        1, 1, 1, 0, 1,
-        0, 1, 1, 0, 0,
-        1, 0, 1, 0, 0,
-        1, 1, 0, 0, 1
-    ],
-
-    "failure_reason": [
-        0, 1, 0, 2, 0,
-        2, 1, 0, 2, 3,
-        1, 3, 0, 3, 2,
-        1, 0, 2, 3, 0
-    ],
-
-    "recovered": [
-        1, 1, 1, 0, 1,
-        0, 1, 1, 0, 0,
-        1, 0, 1, 0, 0,
-        1, 1, 0, 0, 1
-    ]
-})
-
-X = data[
-    [
-        "amount",
-        "previous_failures",
-        "customer_history",
-        "failure_reason"
-    ]
-]
-
-y = data["recovered"]
-
-model = RandomForestClassifier(
-    n_estimators=100,
-    max_depth=5,
-    random_state=42
+BASE_DIR = os.path.dirname(
+    os.path.dirname(
+        os.path.abspath(__file__)
+    )
 )
 
-model.fit(X, y)
+CSV_PATH = os.path.join(
+    BASE_DIR,
+    "ml",
+    "payment_training_data.csv"
+)
 
-joblib.dump(model, "ml/recovery_model.pkl")
+MODEL_PATH = os.path.join(
+    BASE_DIR,
+    "ml",
+    "recovery_model.pkl"
+)
+
+
+# ============================================================
+# LOAD DATASET
+# ============================================================
+
+print("Loading dataset...")
+
+data = pd.read_csv(CSV_PATH)
+
+print("Dataset loaded successfully!")
+print("Training rows:", len(data))
+print("Columns:", list(data.columns))
+
+
+# ============================================================
+# REQUIRED COLUMNS CHECK
+# ============================================================
+
+features = [
+    "amount",
+    "previous_failures",
+    "customer_history",
+    "failure_reason",
+    "payment_method",
+    "retry_count",
+    "customer_age_days",
+    "time_of_day",
+    "day_type"
+]
+
+target = "recovered"
+
+
+required_columns = features + [target]
+
+missing_columns = [
+    column
+    for column in required_columns
+    if column not in data.columns
+]
+
+if missing_columns:
+    raise ValueError(
+        f"Missing columns in CSV: {missing_columns}"
+    )
+
+
+# ============================================================
+# REMOVE MISSING VALUES
+# ============================================================
+
+data = data.dropna(
+    subset=required_columns
+)
+
+print(
+    "Rows after removing missing values:",
+    len(data)
+)
+
+
+# ============================================================
+# FEATURES AND TARGET
+# ============================================================
+
+X = data[features]
+
+y = data[target]
+
+
+# ============================================================
+# CATEGORICAL FEATURES
+# ============================================================
+
+categorical_features = [
+    "failure_reason",
+    "payment_method",
+    "day_type"
+]
+
+
+# ============================================================
+# NUMERICAL FEATURES
+# ============================================================
+
+numerical_features = [
+    "amount",
+    "previous_failures",
+    "customer_history",
+    "retry_count",
+    "customer_age_days",
+    "time_of_day"
+]
+
+
+# ============================================================
+# PREPROCESSING
+# ============================================================
+
+preprocessor = ColumnTransformer(
+    transformers=[
+        (
+            "categorical",
+            OneHotEncoder(
+                handle_unknown="ignore"
+            ),
+            categorical_features
+        ),
+
+        (
+            "numerical",
+            "passthrough",
+            numerical_features
+        )
+    ]
+)
+
+
+# ============================================================
+# RANDOM FOREST CLASSIFIER
+# ============================================================
+
+classifier = RandomForestClassifier(
+    n_estimators=100,
+    max_depth=8,
+    random_state=42,
+    class_weight="balanced"
+)
+
+
+# ============================================================
+# COMPLETE MACHINE LEARNING PIPELINE
+# ============================================================
+
+pipeline = Pipeline(
+    steps=[
+        (
+            "preprocessor",
+            preprocessor
+        ),
+
+        (
+            "classifier",
+            classifier
+        )
+    ]
+)
+
+
+# ============================================================
+# TRAIN MODEL
+# ============================================================
+
+print("Training AI model...")
+
+pipeline.fit(
+    X,
+    y
+)
 
 print("AI model trained successfully!")
+
+print(
+    "Training rows:",
+    len(X)
+)
+
+
+# ============================================================
+# CREATE MODEL DIRECTORY
+# ============================================================
+
+os.makedirs(
+    os.path.dirname(MODEL_PATH),
+    exist_ok=True
+)
+
+
+# ============================================================
+# SAVE TRAINED MODEL
+# ============================================================
+
+joblib.dump(
+    pipeline,
+    MODEL_PATH
+)
+
+print("Model saved successfully!")
+
+print(
+    "Model path:",
+    MODEL_PATH
+)
+
+
+# ============================================================
+# TRAINING SUMMARY
+# ============================================================
+
+print("\n==============================")
+print("MODEL TRAINING SUMMARY")
+print("==============================")
+print(
+    "Dataset rows:",
+    len(data)
+)
+print(
+    "Features:",
+    len(features)
+)
+print(
+    "Target:",
+    target
+)
+print(
+    "Model: Random Forest Classifier"
+)
+print(
+    "Trees:",
+    100
+)
+print(
+    "Max depth:",
+    8
+)
+print(
+    "Categorical encoding: One-Hot Encoding"
+)
+print("==============================")
+print("Training completed!")

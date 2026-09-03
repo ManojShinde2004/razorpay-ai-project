@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Payment
+
 import joblib
 import os
+import pandas as pd
+
 from django.conf import settings
 from datetime import datetime
-import pandas as pd
 
 
 # ============================================================
@@ -94,7 +96,7 @@ def recovery(request):
 
 
 # ============================================================
-# ANALYZE PAYMENT
+# ANALYZE PAYMENT USING AI
 # ============================================================
 
 def analyze_payment(request, payment_id):
@@ -103,6 +105,10 @@ def analyze_payment(request, payment_id):
         Payment,
         payment_id=payment_id
     )
+
+    # --------------------------------------------------------
+    # BASIC PAYMENT INFORMATION
+    # --------------------------------------------------------
 
     amount = float(payment.amount)
 
@@ -142,6 +148,10 @@ def analyze_payment(request, payment_id):
         365
     )
 
+    # --------------------------------------------------------
+    # TIME INFORMATION
+    # --------------------------------------------------------
+
     time_of_day = datetime.now().hour
 
     day_type = (
@@ -149,6 +159,12 @@ def analyze_payment(request, payment_id):
         if datetime.now().weekday() < 5
         else "weekend"
     )
+
+    # --------------------------------------------------------
+    # CREATE INPUT DATA
+    #
+    # These MUST match the features used while training.
+    # --------------------------------------------------------
 
     input_data = pd.DataFrame([{
 
@@ -172,6 +188,10 @@ def analyze_payment(request, payment_id):
 
     }])
 
+    # --------------------------------------------------------
+    # AI PREDICTION
+    # --------------------------------------------------------
+
     probability = model.predict_proba(
         input_data
     )[0][1]
@@ -181,7 +201,13 @@ def analyze_payment(request, payment_id):
         2
     )
 
-    reason = failure_reason.lower()
+    # --------------------------------------------------------
+    # RECOVERY RECOMMENDATION
+    # --------------------------------------------------------
+
+    reason = str(
+        failure_reason
+    ).lower()
 
     if reason == "insufficient_funds":
 
@@ -244,6 +270,10 @@ def analyze_payment(request, payment_id):
             recommendation = (
                 "Use Alternate Payment Method"
             )
+
+    # --------------------------------------------------------
+    # CONTEXT
+    # --------------------------------------------------------
 
     context = {
 
@@ -372,7 +402,10 @@ def analytics(request):
     if failed_payments > 0:
 
         recovery_rate = round(
-            (recovered_payments / failed_payments) * 100,
+            (
+                recovered_payments /
+                failed_payments
+            ) * 100,
             1
         )
 
@@ -382,17 +415,16 @@ def analytics(request):
 
     # --------------------------------------------------------
     # ESTIMATED RECOVERY
-    #
-    # This is a dashboard visualization metric.
-    # It estimates recoverable value using the
-    # recovered/failed ratio.
     # --------------------------------------------------------
 
     if failed_payments > 0:
 
         estimated_recovery = round(
             failed_amount *
-            (recovered_payments / failed_payments),
+            (
+                recovered_payments /
+                failed_payments
+            ),
             2
         )
 
@@ -424,9 +456,11 @@ def analytics(request):
         failed_amount
     ]
 
-    context = {
+    # --------------------------------------------------------
+    # CONTEXT
+    # --------------------------------------------------------
 
-        # Statistics
+    context = {
 
         "total": total_payments,
 
@@ -445,8 +479,6 @@ def analytics(request):
         "recovery_rate": recovery_rate,
 
         "estimated_recovery": estimated_recovery,
-
-        # Chart data
 
         "status_labels": status_labels,
 
