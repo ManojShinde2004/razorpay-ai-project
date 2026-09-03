@@ -28,7 +28,6 @@ def dashboard(request):
 
     payments = Payment.objects.all().order_by("-id")
 
-    # Counts
     total_payments = payments.count()
 
     failed_payments = payments.filter(
@@ -43,22 +42,17 @@ def dashboard(request):
         recovered=True
     ).count()
 
-    # Amount
     total_amount = sum(
         float(payment.amount)
         for payment in payments
     )
 
     context = {
-
         "payments": payments,
-
-        # These names MUST match dashboard.html
         "total": total_payments,
         "failed": failed_payments,
         "successful": successful_payments,
         "recovered": recovered_payments,
-
         "total_amount": total_amount,
     }
 
@@ -87,10 +81,7 @@ def recovery(request):
     )
 
     context = {
-
         "payments": payments,
-
-        # These names MUST match recovery.html
         "total_failed": total_failed,
         "failed_amount": failed_amount,
     }
@@ -112,10 +103,6 @@ def analyze_payment(request, payment_id):
         Payment,
         payment_id=payment_id
     )
-
-    # --------------------------------------------------------
-    # Convert database values into ML features
-    # --------------------------------------------------------
 
     amount = float(payment.amount)
 
@@ -163,10 +150,6 @@ def analyze_payment(request, payment_id):
         else "weekend"
     )
 
-    # --------------------------------------------------------
-    # ML INPUT
-    # --------------------------------------------------------
-
     input_data = pd.DataFrame([{
 
         "amount": amount,
@@ -189,10 +172,6 @@ def analyze_payment(request, payment_id):
 
     }])
 
-    # --------------------------------------------------------
-    # AI PREDICTION
-    # --------------------------------------------------------
-
     probability = model.predict_proba(
         input_data
     )[0][1]
@@ -201,10 +180,6 @@ def analyze_payment(request, payment_id):
         probability * 100,
         2
     )
-
-    # --------------------------------------------------------
-    # AI RECOMMENDATION
-    # --------------------------------------------------------
 
     reason = failure_reason.lower()
 
@@ -277,6 +252,10 @@ def analyze_payment(request, payment_id):
         "probability": probability_percentage,
 
         "recommendation": recommendation,
+
+        "previous_failures": previous_failures,
+
+        "customer_history": customer_history,
 
     }
 
@@ -364,7 +343,7 @@ def analytics(request):
     ).count()
 
     # --------------------------------------------------------
-    # TOTAL AMOUNT
+    # AMOUNTS
     # --------------------------------------------------------
 
     total_amount = sum(
@@ -372,20 +351,12 @@ def analytics(request):
         for payment in payments
     )
 
-    # --------------------------------------------------------
-    # SUCCESSFUL AMOUNT
-    # --------------------------------------------------------
-
     success_amount = sum(
         float(payment.amount)
         for payment in payments.filter(
             status__iexact="Success"
         )
     )
-
-    # --------------------------------------------------------
-    # FAILED AMOUNT
-    # --------------------------------------------------------
 
     failed_amount = sum(
         float(payment.amount)
@@ -410,12 +381,52 @@ def analytics(request):
         recovery_rate = 0
 
     # --------------------------------------------------------
-    # CONTEXT
+    # ESTIMATED RECOVERY
+    #
+    # This is a dashboard visualization metric.
+    # It estimates recoverable value using the
+    # recovered/failed ratio.
     # --------------------------------------------------------
+
+    if failed_payments > 0:
+
+        estimated_recovery = round(
+            failed_amount *
+            (recovered_payments / failed_payments),
+            2
+        )
+
+    else:
+
+        estimated_recovery = 0
+
+    # --------------------------------------------------------
+    # CHART DATA
+    # --------------------------------------------------------
+
+    status_labels = [
+        "Successful",
+        "Failed"
+    ]
+
+    status_counts = [
+        successful_payments,
+        failed_payments
+    ]
+
+    value_labels = [
+        "Successful",
+        "Failed"
+    ]
+
+    value_amounts = [
+        success_amount,
+        failed_amount
+    ]
 
     context = {
 
-        # Names used by analytics.html
+        # Statistics
 
         "total": total_payments,
 
@@ -432,6 +443,18 @@ def analytics(request):
         "failed_amount": failed_amount,
 
         "recovery_rate": recovery_rate,
+
+        "estimated_recovery": estimated_recovery,
+
+        # Chart data
+
+        "status_labels": status_labels,
+
+        "status_counts": status_counts,
+
+        "value_labels": value_labels,
+
+        "value_amounts": value_amounts,
 
     }
 
