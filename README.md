@@ -18,6 +18,10 @@ https://revenueai-4588.onrender.com/
 
 https://github.com/ManojShinde2004/razorpay-ai-project
 
+### 🎥 Demo Video
+
+https://www.youtube.com/watch?v=ESSQLF7AxG0
+
 ---
 
 ## 🎯 Problem Statement
@@ -45,7 +49,7 @@ RevenueAI allows a merchant or business to:
 3. View failed payment recovery opportunities
 4. Analyze failed payments using Machine Learning
 5. Get a recovery probability
-6. Receive an AI-based recovery recommendation
+6. Receive a recovery recommendation
 7. View payment analytics
 8. Compare successful and failed payment values
 9. View graphical payment insights
@@ -54,8 +58,6 @@ RevenueAI allows a merchant or business to:
 ---
 
 ## 👤 Target Users
-
-RevenueAI is designed for:
 
 ### Merchants and Businesses
 
@@ -71,16 +73,19 @@ RevenueAI uses Machine Learning to predict whether a failed payment can potentia
 
 ## Machine Learning Model
 
-The project uses:
-
 **Random Forest Classifier**
 
-Model configuration:
+### Model Configuration
 
 - Number of trees: 100
 - Maximum depth: 8
 - Class weighting: Balanced
 - Random state: 42
+- Categorical encoding: One-Hot Encoding
+
+The model predicts the probability of the `recovered` class using payment-related features.
+
+The application combines the predicted recovery probability with the payment failure reason to provide a bounded recovery recommendation such as retry, reminder, or alternate payment method.
 
 ---
 
